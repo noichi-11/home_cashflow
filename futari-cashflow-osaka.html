@@ -1,0 +1,1519 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="ふたりのお金">
+<meta name="theme-color" content="#EEF3F4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0D1518" media="(prefers-color-scheme: dark)">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<title>ふたりのキャッシュフロー表</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="大阪の相場つき。ふたりの収入・住まい・結婚式・子育て・旅行から、人生のお金の流れを計算するツール">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Maru+Gothic:wght@500;700&display=swap">
+<style>
+/* Layout: アプリ型。上に固定ヘッダー、中央に1カラム（iPadでは2カラム）、下に5つのタブ。数字はグラフと年表で読む */
+:root{
+  --bg:#EEF3F4; --surface:#FFFFFF; --surface-2:#E5ECEE; --ink:#11232A; --muted:#55686F; --line:#D2DDE1;
+  --accent:#0A7480; --accent-strong:#065A63; --accent-soft:#D3EBEE; --on-accent:#FFFFFF;
+  --gold:#A8670F; --gold-soft:#F7E9D2;
+  --plus:#1F7F55; --plus-soft:#DAF0E4; --minus:#BE3149; --minus-soft:#F8DFE4; --invest:#93C7CD;
+  --knob:#FFFFFF; --scrim:rgba(8,20,24,.42); --shadow:0 1px 2px rgba(17,35,42,.07),0 6px 18px rgba(17,35,42,.07);
+  --f-display:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Hiragino Sans","Yu Gothic",sans-serif;
+  --f-body:"BIZ UDPGothic","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic","Meiryo",sans-serif;
+  --r:16px; --tabh:62px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0D1518; --surface:#152126; --surface-2:#1D2C31; --ink:#E3ECEE; --muted:#93A6AC; --line:#293B41;
+    --accent:#3FB3BE; --accent-strong:#73CCD4; --accent-soft:#143A40; --on-accent:#05262A;
+    --gold:#E2A64C; --gold-soft:#372A16;
+    --plus:#5CC490; --plus-soft:#153226; --minus:#F07B8D; --minus-soft:#3C1C24; --invest:#2C6A71;
+    --knob:#EEF4F5; --scrim:rgba(0,0,0,.55); --shadow:0 1px 2px rgba(0,0,0,.35);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0D1518; --surface:#152126; --surface-2:#1D2C31; --ink:#E3ECEE; --muted:#93A6AC; --line:#293B41;
+  --accent:#3FB3BE; --accent-strong:#73CCD4; --accent-soft:#143A40; --on-accent:#05262A;
+  --gold:#E2A64C; --gold-soft:#372A16;
+  --plus:#5CC490; --plus-soft:#153226; --minus:#F07B8D; --minus-soft:#3C1C24; --invest:#2C6A71;
+  --knob:#EEF4F5; --scrim:rgba(0,0,0,.55); --shadow:0 1px 2px rgba(0,0,0,.35);
+  color-scheme:dark;
+}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.65;-webkit-tap-highlight-color:transparent}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+h1,h2,h3{font-family:var(--f-display);font-weight:700;text-wrap:balance;margin:0;line-height:1.35}
+h2{font-size:20px}
+h3{font-size:17px}
+p{margin:0}
+.num,.kpi .v,.amt,table{font-variant-numeric:tabular-nums}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid transparent;transition:border-color .2s}
+.top.scrolled{border-bottom-color:var(--line)}
+.top-in{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:10px;display:flex;align-items:center;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;min-width:0}
+.brand svg{width:34px;height:34px;flex:none}
+.brand .t{display:flex;flex-direction:column;line-height:1.2;min-width:0}
+.brand b{font-family:var(--f-display);font-weight:700;font-size:17px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand small{font-size:11px;color:var(--muted);letter-spacing:.06em}
+.hpill{margin-left:auto;flex:none;border:0;border-radius:999px;padding:6px 12px;font-size:12px;font-weight:700;line-height:1.3;text-align:right}
+.hpill small{display:block;font-weight:400;font-size:10.5px;opacity:.85;white-space:nowrap}
+@media (max-width:430px){.hpill .yr{display:none}.brand b{font-size:15px}.top-in{gap:8px}}
+.good{background:var(--plus-soft);color:var(--plus)}
+.warn{background:var(--gold-soft);color:var(--gold)}
+.bad{background:var(--minus-soft);color:var(--minus)}
+
+main.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:6px calc(var(--tabh) + 32px + env(safe-area-inset-bottom,0px))}
+.view{display:grid;gap:16px}
+.lead{color:var(--muted);font-size:14px}
+
+/* tab bar */
+.tabbar{position:fixed;left:0;right:0;bottom:0;z-index:25;background:var(--surface);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px);padding-left:max(4px,env(safe-area-inset-left,0px));padding-right:max(4px,env(safe-area-inset-right,0px))}
+.tabbar-in{max-width:620px;margin:0 auto;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));height:var(--tabh)}
+.tab{border:0;background:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;font-size:11px;color:var(--muted);padding:0}
+.tab svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.tab[aria-selected="true"]{color:var(--accent);font-weight:700}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;border:0;border-radius:12px;padding:11px 16px;font-weight:700;font-size:15px;background:var(--accent);color:var(--on-accent);line-height:1.3;text-align:center}
+.btn.ghost{background:var(--surface-2);color:var(--ink)}
+.btn.line{background:transparent;border:1px solid var(--line);color:var(--accent)}
+.btn.danger{background:var(--minus-soft);color:var(--minus)}
+.btn.small{padding:7px 12px;font-size:13px;border-radius:10px}
+.btn.block{width:100%}
+.btns{display:flex;flex-wrap:wrap;gap:8px}
+.link{border:0;background:none;color:var(--accent);padding:0;font-weight:700;font-size:13.5px}
+
+/* sections */
+.sec{background:var(--surface);border:1px solid var(--line);border-radius:var(--r)}
+.sec>summary{list-style:none;display:flex;align-items:center;gap:12px;padding:14px 16px;cursor:pointer}
+.sec>summary::-webkit-details-marker{display:none}
+.sec>summary .ic{width:38px;height:38px;border-radius:12px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;flex:none}
+.sec>summary .ic svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.sec>summary .tx{min-width:0;flex:1}
+.sec>summary .ttl{display:block;font-family:var(--f-display);font-weight:700;font-size:17px;line-height:1.3}
+.sec>summary .sub{display:block;font-size:12.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.chev{width:20px;height:20px;flex:none;fill:none;stroke:var(--muted);stroke-width:2;transition:transform .2s}
+.sec[open]>summary .chev{transform:rotate(180deg)}
+.sec-body{padding:0 12px 14px;display:grid;gap:14px;min-width:0}
+.inputs{display:grid;gap:12px;align-items:start}
+@media (min-width:900px){.inputs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.group{border:1px solid var(--line);border-radius:14px;padding:2px 12px;background:var(--surface)}
+.group>.gh{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:12px 0 4px}
+.group>.gh b{font-size:15px}
+.row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 12px;padding:11px 0;border-top:1px solid var(--line)}
+.row:first-child,.gh+.row{border-top:0}
+.row>label:not(.sw),.row>.lbl{flex:1 1 7.5em;min-width:0;font-size:14.5px;line-height:1.5}
+.row .hint,.row>.chips,.row>.seg,.row>.full{flex-basis:100%}
+.hint{margin:0;font-size:12.5px;color:var(--muted);line-height:1.55}
+.hint b{color:var(--ink)}
+.inp{display:flex;align-items:center;gap:6px}
+.inp input,.txt{width:5.8em;text-align:right;padding:9px 10px;border:1px solid var(--line);border-radius:10px;background:var(--surface-2);font-size:16px;font-variant-numeric:tabular-nums}
+.txt{width:9.5em;text-align:left}
+.inp .u{font-size:13px;color:var(--muted);min-width:2.6em}
+select{font-size:16px;padding:9px 30px 9px 10px;border:1px solid var(--line);border-radius:10px;background:var(--surface-2);max-width:100%;-webkit-appearance:none;appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%);background-position:calc(100% - 15px) 52%,calc(100% - 10px) 52%;background-size:5px 5px;background-repeat:no-repeat}
+select.wide{width:100%}
+.stp{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:10px;background:var(--surface-2);overflow:hidden}
+.stp button{width:40px;height:40px;border:0;background:transparent;font-size:20px;color:var(--accent);line-height:1}
+.stp input{width:4.4em;border:0;background:transparent;text-align:center;padding:8px 0;font-size:16px;font-variant-numeric:tabular-nums}
+.seg{display:inline-flex;flex-wrap:wrap;background:var(--surface-2);border-radius:10px;padding:3px;gap:2px;max-width:100%}
+.seg button{border:0;background:transparent;padding:7px 12px;border-radius:8px;font-size:13.5px;color:var(--muted);line-height:1.35}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--ink);font-weight:700;box-shadow:var(--shadow)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 12px;font-size:13px;line-height:1.3;color:var(--ink)}
+.chip small{color:var(--muted);font-size:11px;margin-left:4px}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.chip[aria-pressed="true"] small{color:var(--on-accent);opacity:.85}
+.sw{position:relative;display:inline-block;width:51px;height:31px;flex:none}
+.sw input{position:absolute;inset:0;opacity:0;margin:0;width:100%;height:100%;cursor:pointer;z-index:1}
+.sw span{position:absolute;inset:0;border-radius:999px;background:var(--line);transition:background .2s}
+.sw span::after{content:"";position:absolute;top:2px;left:2px;width:27px;height:27px;border-radius:50%;background:var(--knob);box-shadow:0 1px 3px rgba(0,0,0,.25);transition:transform .2s}
+.sw input:checked+span{background:var(--accent)}
+.sw input:checked+span::after{transform:translateX(20px)}
+.sw input:focus-visible+span{outline:2px solid var(--accent);outline-offset:2px}
+.live{font-size:13px;color:var(--accent-strong);font-weight:700}
+.more>summary{cursor:pointer;color:var(--accent);font-weight:700;font-size:13.5px;padding:8px 0;list-style:none}
+.more>summary::-webkit-details-marker{display:none}
+
+/* 大阪の相場ボックス */
+.osaka{background:var(--gold-soft);border-radius:12px;padding:12px 14px;font-size:13px;line-height:1.6;display:grid;gap:6px;min-width:0}
+.osaka .tag{justify-self:start;font-size:11px;font-weight:700;letter-spacing:.08em;color:var(--gold);border:1px solid var(--gold);border-radius:999px;padding:0 8px}
+.osaka ul{margin:0;padding-left:1.2em}
+.osaka .src{font-size:11.5px;color:var(--muted)}
+
+/* results */
+.banner{display:flex;flex-wrap:wrap;gap:10px 12px;align-items:center;justify-content:space-between;background:var(--accent-soft);border-radius:14px;padding:12px 14px;font-size:13.5px}
+.banner p{flex:1 1 220px}
+.hero{display:grid;gap:8px;padding-top:4px}
+.hero .eyebrow{font-size:12px;color:var(--muted);letter-spacing:.06em}
+.hero h1{font-size:clamp(22px,5.8vw,30px)}
+.status{justify-self:start;display:inline-flex;gap:6px;align-items:center;font-size:12.5px;font-weight:700;padding:4px 10px;border-radius:999px}
+.kpis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (min-width:760px){.kpis{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;min-width:0}
+.kpi .l{font-size:12px;color:var(--muted)}
+.kpi .v{font-size:21px;font-weight:700;line-height:1.3;margin-top:2px}
+.kpi .s{font-size:11.5px;color:var(--muted)}
+.kpi .v.neg{color:var(--minus)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px;min-width:0}
+.chart-head{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px}
+.chart{position:relative;touch-action:pan-y;user-select:none;-webkit-user-select:none}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+.ax text{fill:var(--muted);font-size:10.5px;font-family:var(--f-body)}
+.ax line{stroke:var(--line);stroke-width:1}
+.zero{stroke:var(--muted);stroke-width:1}
+.a-pos{fill:var(--accent-soft)}
+.a-neg{fill:var(--minus-soft)}
+.a-inv{fill:var(--invest);opacity:.6}
+.l-pos{fill:none;stroke:var(--accent);stroke-width:2.2;stroke-linejoin:round}
+.l-neg{fill:none;stroke:var(--minus);stroke-width:2.2;stroke-linejoin:round}
+.b-pos{fill:var(--plus)}
+.b-neg{fill:var(--minus)}
+.ev-dot{fill:var(--gold)}
+.pt{fill:var(--surface);stroke-width:2}
+.pt.acc{stroke:var(--accent)}
+.pt.neg{stroke:var(--minus)}
+.lbl-end{fill:var(--ink);font-size:11px;font-weight:700}
+.cur{stroke:var(--ink);stroke-width:1;stroke-dasharray:3 3}
+.hit{fill:transparent}
+.legend{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12px;color:var(--muted)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+.lg-acc{background:var(--accent)}
+.lg-inv{background:var(--invest)}
+.lg-ev{background:var(--gold);border-radius:50%!important}
+.lg-pos{background:var(--plus)}
+.lg-neg{background:var(--minus)}
+.charts{display:grid;gap:12px}
+@media (min-width:900px){.charts{grid-template-columns:3fr 2fr}}
+.yp{display:grid;gap:10px}
+.yp-h{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 10px}
+.yp-h b{font-family:var(--f-display);font-size:18px}
+.yp-h span{font-size:12.5px;color:var(--muted)}
+.yp-cols{display:grid;gap:10px}
+@media (min-width:600px){.yp-cols{grid-template-columns:1fr 1fr}}
+.items{display:grid;gap:2px;font-size:13.5px}
+.items .it{display:flex;justify-content:space-between;gap:10px;padding:3px 0;border-bottom:1px dashed var(--line)}
+.items .it span:first-child{min-width:0}
+.items .it.tot{border-bottom:0;font-weight:700;padding-top:6px}
+.items h4{margin:0 0 4px;font-size:12px;color:var(--muted);font-weight:700;letter-spacing:.06em}
+.pos{color:var(--plus)}
+.neg{color:var(--minus)}
+.advice{display:grid;gap:10px}
+@media (min-width:760px){.advice{grid-template-columns:1fr 1fr}}
+.adv{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;display:grid;gap:4px;font-size:14px;min-width:0}
+.adv .k{justify-self:start;font-size:11px;font-weight:700;border-radius:6px;padding:1px 8px}
+.k.info{background:var(--accent-soft);color:var(--accent-strong)}
+.notes{font-size:12px;color:var(--muted);line-height:1.6}
+
+/* events */
+.tpl-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+@media (min-width:640px){.tpl-grid{grid-template-columns:repeat(6,minmax(0,1fr))}}
+.tpl{border:1px solid var(--line);background:var(--surface);border-radius:14px;padding:12px 6px 10px;display:grid;justify-items:center;gap:4px;font-size:13px;font-weight:700;line-height:1.3;text-align:center}
+.tpl svg{width:26px;height:26px;fill:none;stroke:var(--accent);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.tpl.free{border-style:dashed;color:var(--accent);display:flex;justify-content:center;gap:8px;padding:12px;width:100%}
+.tpl.free svg{width:22px;height:22px}
+.tl{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:4px 14px}
+.tl-y{display:grid;grid-template-columns:70px minmax(0,1fr);gap:10px;padding:10px 0;border-top:1px solid var(--line)}
+.tl-y:first-child{border-top:0}
+.tl-y .yy b{display:block;font-size:16px;font-variant-numeric:tabular-nums;line-height:1.3}
+.tl-y .yy small{display:block;color:var(--muted);font-size:11px;line-height:1.4}
+.tl-list{display:grid;gap:2px;min-width:0}
+.ev{display:flex;align-items:center;gap:8px;width:100%;text-align:left;border:0;background:none;padding:6px 0;font-size:14px;line-height:1.4}
+.ev .nm{flex:1;min-width:0}
+.ev .amt{font-weight:700;white-space:nowrap}
+.ev .amt.in{color:var(--plus)}
+.badge{display:inline-block;font-size:11px;border-radius:6px;padding:0 6px;background:var(--surface-2);color:var(--muted);font-weight:400;margin-left:4px;white-space:nowrap}
+.ev.auto{color:var(--muted);cursor:default}
+.empty{padding:20px 4px;text-align:center;color:var(--muted);font-size:14px}
+
+/* table */
+.tbl-wrap{overflow:auto;max-height:68vh;border:1px solid var(--line);border-radius:14px;background:var(--surface);-webkit-overflow-scrolling:touch}
+table{border-collapse:separate;border-spacing:0;font-size:13px;min-width:100%}
+th,td{padding:8px 10px;white-space:nowrap;text-align:right;border-bottom:1px solid var(--line)}
+thead th{position:sticky;top:0;background:var(--surface-2);font-size:11.5px;color:var(--muted);font-weight:700;z-index:2}
+th:first-child,td:first-child{position:sticky;left:0;background:var(--surface);text-align:left;z-index:1;border-right:1px solid var(--line)}
+thead th:first-child{z-index:3;background:var(--surface-2)}
+td.ev-c{text-align:left;max-width:260px;overflow:hidden;text-overflow:ellipsis;color:var(--muted);font-size:12px}
+tbody tr{cursor:pointer}
+tbody tr:hover td{background:var(--surface-2)}
+td.tot{font-weight:700}
+tr.min td{background:var(--gold-soft)}
+
+/* sheet */
+.scrim{position:fixed;inset:0;background:var(--scrim);z-index:50}
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:51;max-height:calc(100% - 36px - env(safe-area-inset-top,0px));overflow:auto;-webkit-overflow-scrolling:touch;background:var(--bg);border-radius:20px 20px 0 0;padding-top:6px;padding-bottom:calc(20px + env(safe-area-inset-bottom,0px));padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));box-shadow:var(--shadow)}
+.sheet-in{display:grid;gap:14px;max-width:600px;margin:0 auto}
+.grab{width:40px;height:5px;border-radius:3px;background:var(--line);margin:4px auto 6px}
+.sheet-h{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.x{border:0;background:var(--surface-2);width:34px;height:34px;border-radius:50%;font-size:18px;line-height:1;color:var(--muted)}
+.tpl-item{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;text-align:left;border:0;border-top:1px solid var(--line);background:none;padding:12px 0;font-size:14.5px}
+.tpl-item:first-child{border-top:0}
+.tpl-item small{display:block;color:var(--muted);font-size:12px}
+@media (min-width:700px){.sheet{left:50%;right:auto;width:600px;top:50%;bottom:auto;transform:translate(-50%,-50%);border-radius:20px;max-height:86%;padding-bottom:20px}}
+
+/* wizard */
+.wiz{position:fixed;inset:0;z-index:60;background:var(--bg);overflow:auto;-webkit-overflow-scrolling:touch;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.wiz-in{max-width:580px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:16px 40px;display:grid;gap:16px}
+.wiz-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.prog{display:grid;grid-template-columns:repeat(6,1fr);gap:4px}
+.prog i{height:5px;border-radius:3px;background:var(--line)}
+.prog i.on{background:var(--accent)}
+.wiz h2{font-size:24px}
+.choice{display:grid;gap:8px}
+.choice button{display:flex;justify-content:space-between;align-items:center;gap:10px;text-align:left;border:1px solid var(--line);background:var(--surface);border-radius:14px;padding:12px 14px;font-size:14.5px}
+.choice button[aria-pressed="true"]{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent);background:var(--accent-soft)}
+.choice small{display:block;color:var(--muted);font-size:12px}
+.wiz-nav{display:grid;grid-template-columns:1fr 2fr;gap:10px}
+
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(var(--tabh) + 18px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:999px;font-size:14px;z-index:80;max-width:calc(100% - 32px);text-align:center}
+textarea{width:100%;min-height:90px;border:1px solid var(--line);border-radius:10px;background:var(--surface-2);padding:10px;font-size:13px;font-family:ui-monospace,Menlo,monospace}
+.src-list{margin:0;padding-left:1.1em;font-size:12.5px;line-height:1.7}
+.steps{margin:0;padding-left:1.3em;display:grid;gap:6px;font-size:14px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<header class="top"><div class="top-in">
+  <div class="brand"><svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="10" style="fill:var(--accent)"/><path d="M7 24l6-6 4 3 9-10" style="fill:none;stroke:var(--on-accent);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round"/><circle cx="22" cy="10.5" r="0" /><path d="M21 11h5v5" style="fill:none;stroke:var(--on-accent);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round"/></svg>
+    <span class="t"><b>ふたりのキャッシュフロー表</b><small>大阪版 ・ 単位は万円</small></span></div>
+  <button type="button" class="hpill good" id="hpill" aria-label="結果を見る"></button>
+</div></header>
+<main class="wrap" id="view" aria-live="polite"></main>
+<nav class="tabbar" id="tabbar" aria-label="メニュー"></nav>
+<div class="scrim" id="scrim" hidden></div>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" hidden></div>
+<div class="wiz" id="wiz" role="dialog" aria-modal="true" hidden></div>
+<div class="toast" id="toast" role="status" hidden></div>
+<script>
+(function(){
+'use strict';
+/* ===== 大阪の相場・制度データ（入力補助用。すべて目安） ===== */
+const NOW = new Date().getFullYear();
+const KEY = 'osaka-cashflow-v1';
+
+// 家賃：CHINTAI 掲載物件の2LDK平均（2026年10月）を丸め、1LDK・3LDKは比率で推計
+const RENT_AREAS = [
+  {id:'osaka-center', label:'大阪市 中心部（北・中央・西・福島・天王寺）', city:true, r:{'1LDK':14,'2LDK':20,'3LDK':25}},
+  {id:'osaka-mid', label:'大阪市 人気の住宅地（都島・淀川・城東・阿倍野・東成など）', city:true, r:{'1LDK':11,'2LDK':16,'3LDK':19}},
+  {id:'osaka-outer', label:'大阪市 周辺の区（東淀川・生野・平野・住之江・鶴見など）', city:true, r:{'1LDK':8.5,'2LDK':12,'3LDK':14}},
+  {id:'hokusetsu', label:'北摂（吹田・豊中・茨木・高槻・箕面）', city:false, r:{'1LDK':8.5,'2LDK':12,'3LDK':14}},
+  {id:'east', label:'東部・堺（東大阪・堺・枚方・八尾・守口など）', city:false, r:{'1LDK':6.5,'2LDK':9,'3LDK':10.5}},
+  {id:'south', label:'南部（岸和田・和泉・泉佐野・河内長野など）', city:false, r:{'1LDK':5.5,'2LDK':7.5,'3LDK':9}},
+];
+const LAYOUTS = ['1LDK','2LDK','3LDK'];
+
+// 住宅購入：不動産経済研究所（長谷工総研まとめ 2026年1〜7月）、近畿レインズ（2025年7〜9月）
+const BUY_TYPES = {
+  newMC:{label:'新築マンション（大阪市）', price:5400, costRate:4, mgmt:3, tax:15, dedYears:13, dedCap:3000, src:'2026年1〜7月の平均 5,425万円'},
+  newMP:{label:'新築マンション（大阪府）', price:5500, costRate:4, mgmt:3, tax:15, dedYears:13, dedCap:3000, src:'2026年1〜7月の平均 5,467万円'},
+  usedM:{label:'中古マンション（近畿圏）', price:3200, costRate:7, mgmt:3, tax:10, dedYears:10, dedCap:2000, src:'2025年7〜9月の成約平均 3,206万円'},
+  newH:{label:'新築一戸建て', price:4200, costRate:6, mgmt:1.5, tax:12, dedYears:13, dedCap:3000, src:'エリアで3,000〜5,000万円台と幅があります'},
+  usedH:{label:'中古一戸建て（近畿圏）', price:2400, costRate:7, mgmt:1.5, tax:8, dedYears:10, dedCap:2000, src:'2025年7〜9月の成約平均 2,384万円'},
+};
+// 住宅ローン金利：主要銀行 2026年10月（変動 1.2〜1.7%台、10年固定 3.4〜4.0%台、フラット35 3.83%）
+const RATE_CHIPS = [[1.5,'変動'],[3.6,'10年固定'],[3.8,'フラット35']];
+
+// 生活費（2人・月・万円。家賃と子どもの費用は別）
+const LIVING_ITEMS = [
+  ['food','食費（外食こみ）'],['utility','水道・光熱費'],['comm','スマホ・ネット'],['daily','日用品'],
+  ['insurance','保険料'],['hobby','趣味・交際・レジャー'],['clothes','服・美容'],['medical','医療費'],
+  ['allowance','おこづかい'],['other','その他']
+];
+const LIVING_PRESETS = {
+  save:{label:'節約', desc:'自炊中心・格安SIM', v:{food:5.5,utility:1.8,comm:0.8,daily:0.8,insurance:0.8,hobby:2,clothes:1,medical:0.4,allowance:3,other:0.7}},
+  std:{label:'ふつう', desc:'共働きのよくある水準', v:{food:7,utility:2,comm:1,daily:1,insurance:1,hobby:3,clothes:1.5,medical:0.5,allowance:4,other:1.5}},
+  rich:{label:'ゆとり', desc:'外食・趣味を楽しむ', v:{food:9,utility:2.3,comm:1.2,daily:1.3,insurance:1.5,hobby:4.5,clothes:2.5,medical:0.7,allowance:6,other:2}},
+};
+
+// 年収の上がり方（年率%）。国税庁の年齢別平均：男性は20代後半→55〜59歳（734万円）で約1.7〜1.8倍
+const GROWTH = {
+  low:{label:'控えめ', desc:'中小企業・昇給が少なめ', young:1.5, mid:0.5, senior:0},
+  std:{label:'標準', desc:'平均的な会社員', young:3, mid:1.2, senior:0},
+  high:{label:'積極的', desc:'大企業・専門職・昇進あり', young:4.5, mid:2, senior:0},
+  flat:{label:'横ばい', desc:'年収が変わらない', young:0, mid:0, senior:0},
+};
+
+// 未就学（年・万円）0〜2歳の保育料は大阪市なら2026年9月から第1子も無償
+const NURSERY = {
+  hoikuen1:{label:'1歳から保育園'},
+  hoikuen0:{label:'0歳から保育園'},
+  kinderPub:{label:'3歳まで家庭 → 公立幼稚園'},
+  kinderPri:{label:'3歳まで家庭 → 私立幼稚園'},
+};
+// 文部科学省「子供の学習費調査」令和5年度（年額・万円）
+const EDU = {
+  kinderPub:18.5, kinderPri:34.7, hoikuen35:15,
+  elemPub:33.6, elemPri:182.8, jhsPub:54.2, jhsPri:156.0,
+  hsPub:59.8, hsPri:103.0,
+  hsPubOsaka:55, hsPriOsaka:75, // 大阪府の授業料無償化（2026年度から全学年・所得制限なし）を反映した目安
+};
+// 大学：日本政策金融公庫「教育費負担の実態調査」（令和3年度）をもとにした目安（万円）
+const UNIV = {
+  bun:{label:'私立大学（文系）', entry:82, year:152},
+  ri:{label:'私立大学（理系）', entry:88, year:183},
+  national:{label:'国公立大学', entry:67, year:104},
+  omu:{label:'大阪公立大学（府民は授業料など無償）', entry:39, year:50},
+  none:{label:'進学しない（高校卒業で就職）', entry:0, year:0},
+};
+const AWAY = {year:96, start:38}; // 下宿：仕送り年96万円、住まいの準備38万円
+
+// イベントのひな形（2人分・万円）
+const TPL = [
+  {id:'wed', label:'結婚', icon:'ring', desc:'全国平均（ゼクシィ結婚トレンド調査2024ほか）。招待人数で大きく変わります。', items:[
+    {name:'両家の顔合わせ食事会', amount:8},
+    {name:'婚約指輪', amount:39},
+    {name:'結婚指輪（2人分）', amount:30},
+    {name:'結婚式・披露宴', amount:344, note:'全国平均。関西も同水準'},
+    {name:'ご祝儀', amount:206, type:'in', note:'結婚式費用の約6割をカバー'},
+    {name:'新婚旅行', amount:62},
+    {name:'新生活の家具・家電', amount:53},
+    {name:'親からの結婚資金の援助', amount:100, type:'in', note:'関西で援助を受けた人の平均は約182万円', optional:true},
+  ]},
+  {id:'trip', label:'旅行', icon:'plane', desc:'2人分の目安です。', items:[
+    {name:'国内旅行（1泊2日）', amount:10, repeat:1},
+    {name:'国内旅行（2泊3日・飛行機）', amount:25, repeat:1},
+    {name:'海外旅行（アジア・4日間）', amount:40, repeat:2},
+    {name:'海外旅行（ハワイ・ヨーロッパ）', amount:90, repeat:3},
+    {name:'帰省（交通費・おみやげ）', amount:8, repeat:1},
+    {name:'家族旅行（子どもと）', amount:30, repeat:1},
+  ]},
+  {id:'car', label:'車', icon:'car', desc:'大阪市内は月極駐車場が月2〜3万円台のことも。', items:[
+    {name:'車の購入', amount:300, repeat:10},
+    {name:'軽自動車の購入', amount:180, repeat:10},
+    {name:'車の維持費（駐車場・保険・税金・車検・ガソリン）', amount:45, repeat:1},
+  ]},
+  {id:'home', label:'家電・住まい', icon:'home', desc:'買い替えはくり返しで入れておくと安心です。', items:[
+    {name:'家電の買い替え', amount:30, repeat:8},
+    {name:'家具の買い替え', amount:20, repeat:10},
+    {name:'引っ越し', amount:30},
+    {name:'リフォーム・修繕', amount:300},
+  ]},
+  {id:'family', label:'家族・趣味', icon:'heart', desc:'', items:[
+    {name:'ペット（年間の費用）', amount:20, repeat:1},
+    {name:'七五三・入学のお祝い', amount:10},
+    {name:'習い事・資格の勉強', amount:20},
+    {name:'親の介護・仕送り', amount:36, repeat:1},
+    {name:'記念日・誕生日', amount:5, repeat:1},
+  ]},
+  {id:'income', label:'臨時収入', icon:'coin', desc:'まとまったお金が入る予定もここへ。', items:[
+    {name:'親からの援助', amount:100, type:'in'},
+    {name:'副業の収入', amount:30, type:'in', repeat:1},
+    {name:'相続', amount:500, type:'in'},
+    {name:'保険の満期金', amount:100, type:'in'},
+  ]},
+];
+
+const SOURCES = [
+  ['家賃相場：CHINTAI「大阪府の2LDKの家賃相場」（2026年10月）','https://www.chintai.net/rent/osaka/area/2ldk/'],
+  ['新築マンション価格：不動産経済研究所（長谷工総合研究所まとめ・2026年7月）','https://www.haseko.co.jp/hri/pdf/data-shijo-doko-w-202607.pdf'],
+  ['中古マンション・戸建て：近畿レインズ 市場動向（2025年7〜9月）','https://www.kinkireins.or.jp/webkanri/kanri/wp-content/uploads/2025/10/PRTIMES.pdf'],
+  ['住宅ローン金利：Business Insider Japan（2026年10月の主要銀行金利）','https://www.businessinsider.jp/article/2610-major-bank-mortgage-rates-what-happened-in-october-2026/'],
+  ['結婚費用：ゼクシィ「結婚にかかるお金の相場」','https://zexy.net/mar/manual/kiso_souba/'],
+  ['関西の親からの援助：生命保険文化センター','https://www.jili.or.jp/lifeplan/lifeevent/810.html'],
+  ['教育費：文部科学省「子供の学習費調査」令和5年度','https://www.mext.go.jp/content/20241225-mxt_chousa01_000039333_1.pdf'],
+  ['大阪市 0〜2歳の保育料無償化（2026年9月〜）','https://www.city.osaka.lg.jp/hodoshiryo/seisakukikakushitsu/0000669117.html'],
+  ['大阪市 習い事・塾代助成（小5〜中3・月1万円）','https://www.city.osaka.lg.jp/hodoshiryo/kodomo/0000666309.html'],
+  ['大阪府の高校・大阪公立大学の授業料無償化（解説）','https://financial-field.com/living/entry-238799'],
+  ['出産費用（令和6年度の全国平均 約52万円）','https://www.kaiketsu-j.com/compliance/18784/'],
+  ['平均年収：国税庁「民間給与実態統計調査」令和7年分（解説）','https://www.yasuda-cpa-office.com/post/post-20261026-01'],
+];
+
+/* ===== アイコン（線画） ===== */
+const ICONS = {
+  chart:'<path d="M4 19h16"/><path d="M5 15l4-4 3 3 6-7"/><path d="M15 7h3v3"/>',
+  edit:'<path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13 7l4 4"/>',
+  cal:'<rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/>',
+  table:'<rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 10h16M4 15h16M10 4v16"/>',
+  more:'<circle cx="6" cy="12" r="1.3"/><circle cx="12" cy="12" r="1.3"/><circle cx="18" cy="12" r="1.3"/>',
+  people:'<circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3.5 19c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5"/><path d="M15 14.2c2.6-.3 4.6 1.3 5.3 4.3"/>',
+  yen:'<path d="M7 4l5 7 5-7"/><path d="M12 11v9M8 13h8M8 16.5h8"/>',
+  home:'<path d="M4 11l8-7 8 7"/><path d="M6 9.5V20h12V9.5"/><path d="M10 20v-5h4v5"/>',
+  cart:'<path d="M3 5h2l2 10h11l2-7H6.2"/><circle cx="9" cy="19" r="1.4"/><circle cx="17" cy="19" r="1.4"/>',
+  baby:'<circle cx="12" cy="9" r="4.5"/><path d="M10 9h.01M14 9h.01"/><path d="M10.5 11.2c.9.6 2.1.6 3 0"/><path d="M6 20c1.2-2.6 3.4-4 6-4s4.8 1.4 6 4"/>',
+  bank:'<path d="M4 9l8-5 8 5"/><path d="M5 9v9M9.5 9v9M14.5 9v9M19 9v9M3.5 20h17"/>',
+  ring:'<circle cx="12" cy="14" r="6"/><path d="M9.5 4h5l1.5 2.5-4 3-4-3z"/>',
+  plane:'<path d="M3 13l18-7-5 14-3.5-5.5z"/><path d="M12.5 14.5L21 6"/>',
+  car:'<path d="M5 16V12l2-5h10l2 5v4"/><path d="M4 16h16v2H4z"/><circle cx="8" cy="16" r="1.6"/><circle cx="16" cy="16" r="1.6"/>',
+  heart:'<path d="M12 19s-7-4.4-7-9.2A3.8 3.8 0 0 1 12 7.6a3.8 3.8 0 0 1 7 2.2C19 14.6 12 19 12 19z"/>',
+  coin:'<circle cx="12" cy="12" r="8"/><path d="M9 8l3 4 3-4M12 12v5M9.5 13h5"/>',
+  plus:'<path d="M12 5v14M5 12h14"/>',
+  gear:'<circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/>',
+};
+const svgIcon = (n, cls='') => `<svg viewBox="0 0 24 24" class="${cls}" aria-hidden="true">${ICONS[n]||''}</svg>`;
+
+/* ===== 状態 ===== */
+const uid = () => Math.random().toString(36).slice(2, 9);
+function defaultPerson(name, age, income){
+  return {name, age, income, inputType:'gross', growth:'std', young:3, mid:1.2, senior:0,
+    retireAge:60, reemployUntil:65, reemployRate:60, severance:800,
+    pensionStart:65, pensionAuto:true, pensionManual:150};
+}
+function defaultChild(i, year, single){
+  return {id:uid(), name:`${i+1}人目`, birthYear:year, nursery:'hoikuen1', elem:'pub', jhs:'pub', hs:'pub',
+    univ:'bun', away:false, birthCost:20, leaveWho: single?'A':'B', leaveMonths:12,
+    shortWho: single?'A':'B', shortYears:3, shortRate:80};
+}
+function baseState(){
+  return {
+    v:1, baseYear:NOW, sample:false, mode:'couple', area:'osaka-mid',
+    osakaCity:true, osakaHsFree:true, childAllowance:true, inflation:1.5, endAge:90, childLevel:1,
+    people:[defaultPerson('わたし',28,450), defaultPerson('パートナー',27,380)],
+    savings:{cash:300, invest:0, monthly:3, until:60, rate:3, autoSell:true},
+    housing:{rent:10, layout:'2LDK', moves:[], buyOn:false,
+      buy:{year:NOW+5, type:'usedM', price:3200, down:320, costRate:7, rate:1.5, years:35, mgmt:3, tax:10,
+        rateUp:false, rateUpAfter:10, rateAfter:2.5, ded:true, dedYears:10, dedCap:2000}},
+    livingPreset:'std', living:{...LIVING_PRESETS.std.v}, retireLiving:24, retireLivingAge:65,
+    children:[], events:[]
+  };
+}
+function applyBuyType(b, type){
+  const T = BUY_TYPES[type]; if(!T) return;
+  b.type = type; b.price = T.price; b.costRate = T.costRate; b.mgmt = T.mgmt; b.tax = T.tax;
+  b.dedYears = T.dedYears; b.dedCap = T.dedCap; b.down = Math.round(T.price*0.1/10)*10;
+}
+function ev(name, amount, year, o={}){
+  return {id:uid(), name, amount, year, type:o.type||'out', repeat:o.repeat||0, until:o.until||0, inflate:o.inflate!==false};
+}
+function weddingEvents(year){
+  return TPL[0].items.filter(i=>!i.optional).map(i=>ev(i.name, i.amount, year, {type:i.type}));
+}
+function sampleState(){
+  const s = baseState();
+  s.sample = true;
+  s.people = [defaultPerson('わたし',29,480), defaultPerson('パートナー',28,400)];
+  s.savings = {cash:350, invest:80, monthly:3, until:60, rate:3, autoSell:true};
+  s.area = 'osaka-mid'; s.housing.rent = 11; s.housing.layout = '1LDK';
+  s.housing.buyOn = true; applyBuyType(s.housing.buy, 'newMC'); s.housing.buy.year = NOW+5; s.housing.buy.price = 5000; s.housing.buy.down = 500;
+  s.children = [defaultChild(0, NOW+3), defaultChild(1, NOW+6)];
+  s.children[1].univ = 'omu';
+  const A = s.people[0];
+  s.events = [
+    ...weddingEvents(NOW+1),
+    ev('国内旅行（1泊2日）', 10, NOW+1, {repeat:1, until:NOW+(75-A.age)}),
+    ev('海外旅行（アジア・4日間）', 40, NOW+2, {repeat:3, until:NOW+(70-A.age)}),
+    ev('軽自動車の購入', 180, NOW+7, {repeat:10, until:NOW+(75-A.age)}),
+    ev('車の維持費（駐車場・保険・税金・車検・ガソリン）', 40, NOW+7, {repeat:1, until:NOW+(80-A.age)}),
+    ev('家電の買い替え', 30, NOW+8, {repeat:8, until:NOW+(85-A.age)}),
+  ];
+  return s;
+}
+function merge(def, o){
+  if(Array.isArray(def)) return Array.isArray(o) ? o : def;
+  if(def && typeof def === 'object'){
+    const r = {...def};
+    if(o && typeof o === 'object') for(const k in o) r[k] = (k in def) ? merge(def[k], o[k]) : o[k];
+    return r;
+  }
+  return (o === undefined || o === null) ? def : o;
+}
+function migrate(o){
+  const s = merge(baseState(), o||{});
+  s.people = [0,1].map(i => merge(defaultPerson(i?'パートナー':'わたし', i?27:28, i?380:450), (o&&o.people||[])[i]));
+  s.children = (s.children||[]).map((c,i)=>merge(defaultChild(i, NOW+2), c));
+  s.events = (s.events||[]).map(e=>merge(ev('予定',10,NOW+1), e));
+  s.housing.moves = (s.housing.moves||[]).map(m=>merge({year:NOW+3, rent:12, cost:40}, m));
+  const diff = NOW - (s.baseYear||NOW);
+  if(diff > 0){ s.people.forEach(p => p.age += diff); s.baseYear = NOW; s.yearShifted = diff; }
+  return s;
+}
+
+/* ===== 税・社会保険（概算） ===== */
+function incomeTax(x){
+  const B = [[1950000,.05,0],[3300000,.10,97500],[6950000,.20,427500],[9000000,.23,636000],[18000000,.33,1536000],[40000000,.40,2796000],[Infinity,.45,4796000]];
+  for(const [lim,r,d] of B) if(x <= lim) return Math.max(0, x*r - d);
+  return 0;
+}
+// 額面（万円）→ 手取りなど（万円）。健康保険・厚生年金・雇用保険・介護保険（40〜64歳）・子ども子育て支援金を概算
+function taxes(gross, age){
+  const y = gross*1e4;
+  if(!(y > 0)) return {si:0, it:0, rt:0, net:0};
+  const si = y*(0.0512+0.0055+0.0012) + Math.min(y, 7800000)*0.0915 + ((age>=40 && age<65) ? y*0.008 : 0);
+  let ded;
+  if(y <= 1900000) ded = Math.min(y, 650000);
+  else if(y <= 3600000) ded = y*0.3 + 80000;
+  else if(y <= 6600000) ded = y*0.2 + 440000;
+  else if(y <= 8500000) ded = y*0.1 + 1100000;
+  else ded = 1950000;
+  const inc = Math.max(0, y - ded);
+  const it = incomeTax(Math.max(0, inc - si - 580000))*1.021;
+  const tr = Math.max(0, inc - si - 430000);
+  const rt = tr > 0 ? tr*0.10 + 5000 : 0;
+  return {si:si/1e4, it:it/1e4, rt:rt/1e4, net:(y - si - it - rt)/1e4};
+}
+function growthOf(p, age){
+  if(age < 40) return +p.young||0;
+  if(age < 55) return +p.mid||0;
+  return +p.senior||0;
+}
+function projectGross(p, toAge){
+  let g = +p.income||0;
+  for(let a = p.age; a < toAge; a++) g *= 1 + growthOf(p, a)/100;
+  return g;
+}
+function netNow(p){
+  return p.inputType === 'net' ? (+p.income||0) : taxes(+p.income||0, p.age).net;
+}
+// 年金の目安（今の価値・手取り・年額・万円）：基礎年金 約83万円＋厚生年金（平均年収×0.5481%×加入年数）
+function estimatePension(p){
+  const toGross = v => p.inputType === 'net' ? v/0.78 : v;
+  const g0 = toGross(+p.income||0);
+  if(g0 <= 0) return Math.round(83*0.9);
+  let g = g0, sum = 0, n = 0;
+  for(let a = p.age; a < p.retireAge; a++){ sum += g; n++; g *= 1 + growthOf(p, a)/100; }
+  const past = Math.max(0, p.age - 22);
+  const avgFuture = n ? sum/n : g0;
+  const years = past + n;
+  const avg = years ? (g0*0.8*past + avgFuture*n)/years : g0;
+  const reYears = Math.max(0, Math.min(p.reemployUntil, 70) - p.retireAge);
+  const kousei = Math.min(avg, 1000)*0.005481*Math.min(years, 43) + g*(p.reemployRate/100)*0.005481*reYears;
+  return Math.round((83 + kousei)*0.9);
+}
+const isWho = (who, i) => who === 'both' || (who === 'A' && i === 0) || (who === 'B' && i === 1);
+function pmt(P, ratePct, n){
+  if(P <= 0 || n <= 0) return 0;
+  const i = ratePct/100/12;
+  return i === 0 ? P/n : P*i/(1 - Math.pow(1+i, -n));
+}
+function sumLiving(l){ return LIVING_ITEMS.reduce((a,[k]) => a + (+l[k]||0), 0); }
+function eventYears(e, endY){
+  const out = [];
+  const rep = Math.max(0, Math.round(+e.repeat||0));
+  if(!rep){ out.push(+e.year); return out; }
+  const until = Math.min(+e.until || endY, endY);
+  for(let y = +e.year; y <= until; y += rep) out.push(y);
+  return out;
+}
+function childCost(k, a, y, st){
+  let edu = 0, life = 0, birth = 0, note = '';
+  if(a === 0){ birth = +k.birthCost||0; note = '誕生'; }
+  if(a <= 5) life = 50; else if(a <= 11) life = 60; else if(a <= 14) life = 70; else if(a <= 17) life = 75;
+  else if(a <= 21 && k.univ !== 'none') life = k.away ? 0 : 40;
+  if(a <= 2){
+    const paid = k.nursery === 'hoikuen0' || (k.nursery === 'hoikuen1' && a >= 1);
+    if(paid) edu = st.osakaCity ? (y >= 2027 ? 0 : (y === 2026 ? 20 : 30)) : 30;
+  } else if(a <= 5){
+    edu = k.nursery === 'kinderPub' ? EDU.kinderPub : k.nursery === 'kinderPri' ? EDU.kinderPri : EDU.hoikuen35;
+  } else if(a <= 11){
+    edu = k.elem === 'pri' ? EDU.elemPri : EDU.elemPub;
+    if(st.osakaCity && a >= 10) edu = Math.max(0, edu - 12);
+    if(a === 6) note = '小学校入学';
+  } else if(a <= 14){
+    edu = k.jhs === 'pri' ? EDU.jhsPri : EDU.jhsPub;
+    if(st.osakaCity) edu = Math.max(0, edu - 12);
+    if(a === 12) note = '中学校入学';
+  } else if(a <= 17){
+    edu = k.hs === 'pri' ? (st.osakaHsFree ? EDU.hsPriOsaka : EDU.hsPri) : (st.osakaHsFree ? EDU.hsPubOsaka : EDU.hsPub);
+    if(a === 15) note = '高校入学';
+  } else if(a <= 21){
+    const u = UNIV[k.univ];
+    if(u && k.univ !== 'none'){
+      edu = u.year + (k.away ? AWAY.year : 0);
+      if(a === 18){ edu += u.entry + (k.away ? AWAY.start : 0); note = '大学入学'; }
+    } else if(a === 18) note = '就職';
+  }
+  return {edu, life, birth, note};
+}
+function persons(st){ return st.mode === 'single' ? [st.people[0]] : [st.people[0], st.people[1]]; }
+
+/* ===== シミュレーション（年単位・万円） ===== */
+function simulate(st, extra = 0){
+  const P = persons(st), A = P[0];
+  const years = Math.max(1, Math.round(st.endAge - A.age));
+  const endY = NOW + years;
+  const infl = (+st.inflation||0)/100, pIdx = Math.max(0, infl - 0.005), r = (+st.savings.rate||0)/100;
+  let cash = +st.savings.cash||0, inv = +st.savings.invest||0;
+  const gross = P.map(p => +p.income||0), retireG = P.map(() => null);
+  const pBase = P.map(p => p.pensionAuto ? estimatePension(p) : (+p.pensionManual||0));
+  const kids = st.children.slice().sort((a,b) => a.birthYear - b.birthYear);
+  const evMap = {};
+  st.events.forEach(e => eventYears(e, endY).forEach(y => (evMap[y] = evMap[y] || []).push(e)));
+  const H = st.housing, B = H.buy;
+  const moves = (H.moves||[]).slice().sort((a,b) => a.year - b.year);
+  const loan = {bal:0, rate:0, months:0, pmt:0};
+  const rows = [];
+  for(let t = 0; t <= years; t++){
+    const y = NOW + t, f = Math.pow(1 + infl, t);
+    const ages = P.map(p => p.age + t);
+    const inc = [], out = [], notes = [];
+    let taxA = 0;
+    P.forEach((p, i) => {
+      const age = ages[i];
+      if(t > 0) gross[i] *= 1 + growthOf(p, age - 1)/100;
+      const until = Math.max(p.retireAge, p.reemployUntil);
+      let g = 0;
+      if(age < p.retireAge) g = gross[i];
+      else if(age < until){ if(retireG[i] === null) retireG[i] = gross[i]; g = retireG[i]*(+p.reemployRate||0)/100; }
+      let cut = 0, shortMul = 1;
+      kids.forEach(k => {
+        const kt = y - k.birthYear;
+        if(kt < 0) return;
+        const lm = isWho(k.leaveWho, i) ? (+k.leaveMonths||0) : 0;
+        if(lm > 0){
+          const ms = kt*12, me = Math.min(lm, ms + 12);
+          if(me > ms){ const m1 = Math.max(0, Math.min(me, 6) - ms); const m2 = (me - ms) - m1; cut += (m1*0.2 + m2*0.4)/12; }
+        }
+        if(isWho(k.shortWho, i) && (+k.shortYears||0) > 0){
+          const s0 = Math.ceil(lm/12);
+          if(kt >= s0 && kt < s0 + (+k.shortYears)) shortMul = Math.min(shortMul, (+k.shortRate||0)/100);
+        }
+      });
+      cut = Math.min(cut, 1);
+      const gEff = g*shortMul;
+      let net, tx;
+      if(p.inputType === 'net'){ net = gEff; tx = taxes(gEff/0.78, age); } else { tx = taxes(gEff, age); net = tx.net; }
+      net *= (1 - cut);
+      if(i === 0) taxA = (tx.it + Math.min(tx.rt, 9.75))*(1 - cut);
+      if(net > 0) inc.push({label:`${p.name}の手取り`, v:net, k:'work'});
+      if(cut > 0) notes.push(`${p.name}育休`);
+      if(age === p.retireAge){ if(+p.severance > 0) inc.push({label:`${p.name}の退職金`, v:+p.severance, k:'sev'}); notes.push(`${p.name}定年`); }
+      if(age >= p.pensionStart) inc.push({label:`${p.name}の年金`, v:pBase[i]*Math.pow(1 + pIdx, t), k:'pension'});
+      if(age === p.pensionStart) notes.push(`${p.name}年金開始`);
+    });
+    if(st.childAllowance !== false){
+      let al = 0;
+      kids.forEach((k, idx) => {
+        const a = y - k.birthYear; if(a < 0 || a > 18) return;
+        let rank = 0;
+        for(let j = 0; j < idx; j++){ const aj = y - kids[j].birthYear; if(aj >= 0 && aj <= 22) rank++; }
+        al += rank >= 2 ? 36 : (a <= 2 ? 18 : 12);
+      });
+      if(al > 0) inc.push({label:'児童手当', v:al, k:'allow'});
+    }
+    const ageA = ages[0];
+    const retired = ageA >= st.retireLivingAge;
+    const livM = retired ? (+st.retireLiving||0) : sumLiving(st.living);
+    out.push({label: retired ? '生活費（老後）' : '生活費', v: Math.max(0, livM*12*f - extra*12), cat:'living'});
+    const owned = H.buyOn && y >= B.year;
+    if(!owned){
+      let rent = +H.rent||0, moved = null;
+      moves.forEach(m => { if(m.year <= y) rent = +m.rent||0; if(m.year === y) moved = m; });
+      if(rent > 0) out.push({label:'家賃', v:rent*12*f, cat:'housing'});
+      if(moved){ if(+moved.cost > 0) out.push({label:'住み替え（引っ越し・初期費用）', v:moved.cost*f, cat:'housing'}); notes.push('住み替え'); }
+    }
+    if(H.buyOn && y === B.year){
+      out.push({label:'住宅購入（頭金・諸費用）', v:(+B.down||0) + (+B.price||0)*(+B.costRate||0)/100, cat:'housing'});
+      loan.bal = Math.max(0, (+B.price||0) - (+B.down||0)); loan.rate = +B.rate||0; loan.months = Math.round((+B.years||0)*12);
+      loan.pmt = pmt(loan.bal, loan.rate, loan.months);
+      notes.push('住宅購入');
+    }
+    if(owned){
+      const yi = y - B.year;
+      if(B.rateUp && yi === +B.rateUpAfter && loan.months > 0){ loan.rate = +B.rateAfter||0; loan.pmt = pmt(loan.bal, loan.rate, loan.months); }
+      let paid = 0; const mr = loan.rate/100/12;
+      for(let m = 0; m < 12 && loan.months > 0; m++){ const it = loan.bal*mr; const pay = Math.min(loan.pmt, loan.bal + it); loan.bal = loan.bal + it - pay; paid += pay; loan.months--; }
+      if(loan.months === 0) loan.bal = 0;
+      if(paid > 0) out.push({label:'住宅ローン返済', v:paid, cat:'housing'});
+      if(+B.mgmt > 0) out.push({label:'管理費・修繕積立金', v:B.mgmt*12*f, cat:'housing'});
+      if(+B.tax > 0) out.push({label:'固定資産税', v:+B.tax, cat:'housing'});
+      if(B.ded && yi < +B.dedYears && loan.bal > 0){
+        const d = Math.min(loan.bal*0.007, (+B.dedCap||0)*0.007, taxA);
+        if(d > 0) inc.push({label:'住宅ローン控除（税金の戻り）', v:d, k:'ded'});
+      }
+    }
+    kids.forEach(k => {
+      const a = y - k.birthYear; if(a < 0) return;
+      const c = childCost(k, a, y, st);
+      if(c.birth > 0) out.push({label:`${k.name}の出産・ベビー用品`, v:c.birth*f, cat:'child'});
+      if(c.edu > 0) out.push({label:`${k.name}の保育・教育費`, v:c.edu*f, cat:'child'});
+      if(c.life > 0) out.push({label:`${k.name}の生活費`, v:c.life*f*(+st.childLevel||1), cat:'child'});
+      if(c.note) notes.push(`${k.name}${c.note}`);
+    });
+    const evs = evMap[y] || [];
+    evs.forEach(e => {
+      const v = (+e.amount||0)*(e.inflate ? f : 1);
+      if(e.type === 'in') inc.push({label:e.name, v, k:'event'}); else out.push({label:e.name, v, cat:'event'});
+    });
+    const incT = inc.reduce((a,b) => a + b.v, 0), outT = out.reduce((a,b) => a + b.v, 0);
+    const bal = incT - outT;
+    const contrib = ageA < st.savings.until ? (+st.savings.monthly||0)*12 : 0;
+    inv = inv*(1 + r) + contrib;
+    cash = cash + bal - contrib;
+    let sold = 0;
+    if(cash < 0 && st.savings.autoSell && inv > 0){ sold = Math.min(inv, -cash); inv -= sold; cash += sold; }
+    const cat = c => out.filter(o => o.cat === c).reduce((a,b) => a + b.v, 0);
+    rows.push({y, t, ages, kidAges:kids.map(k => y - k.birthYear), inc, out, incT, outT, bal, contrib, sold, cash, inv, total:cash + inv,
+      living:cat('living'), housing:cat('housing'), child:cat('child'), event:cat('event'), notes, evs:evs.map(e => e.name), once:evs.filter(e => !e.repeat).map(e => e.name)});
+  }
+  let minI = 0; rows.forEach((x, i) => { if(x.total < rows[minI].total) minI = i; });
+  return {rows, P, kids, minI, firstNeg:rows.findIndex(x => x.total < 0), cashNeg:rows.findIndex(x => x.cash < 0), last:rows[rows.length-1], pBase};
+}
+// 最後まで資産がマイナスにならないために必要な「毎月の改善額」（万円）
+function needExtra(st){
+  const ok = x => simulate(st, x).rows.every(r => r.total >= 0);
+  if(ok(0)) return 0;
+  if(!ok(60)) return null;
+  let lo = 0, hi = 60;
+  for(let i = 0; i < 18; i++){ const m = (lo + hi)/2; if(ok(m)) hi = m; else lo = m; }
+  return Math.ceil(hi*10)/10;
+}
+
+/* ===== 共通 ===== */
+const $ = (s, el = document) => el.querySelector(s);
+const $$ = (s, el = document) => Array.from(el.querySelectorAll(s));
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function man(v, unit = '万'){
+  if(v == null || isNaN(v)) return '—';
+  const neg = v < 0; const a = Math.abs(v);
+  let s;
+  if(a >= 10000){ const oku = Math.floor(a/10000); const rest = Math.round(a - oku*10000); s = oku + '億' + (rest ? rest.toLocaleString('ja-JP') + unit : ''); }
+  else s = (a < 10 && Math.round(a*10) % 10 ? a.toFixed(1) : Math.round(a).toLocaleString('ja-JP')) + unit;
+  return (neg ? '−' : '') + s;
+}
+const fmtIn = v => { const n = +v; if(isNaN(n)) return ''; return Number.isInteger(n) ? String(n) : String(Math.round(n*100)/100); };
+function toNum(s){
+  if(typeof s === 'number') return s;
+  s = String(s).replace(/[０-９．－]/g, c => c === '．' ? '.' : c === '－' ? '-' : String.fromCharCode(c.charCodeAt(0) - 0xFEE0)).replace(/[,，\s万円%％歳年月]/g, '');
+  if(s === '' || s === '-' || s === '.') return NaN;
+  return Number(s);
+}
+const getP = (o, p) => p.split('.').reduce((a, k) => a == null ? a : a[k], o);
+function setP(o, p, v){ const ks = p.split('.'); let a = o; for(let i = 0; i < ks.length - 1; i++) a = a[ks[i]]; a[ks[ks.length-1]] = v; }
+const fid = k => 'f-' + k.replace(/\./g, '-');
+function clampField(k, v){
+  const last = k.split('.').pop();
+  if(/^(age|retireAge|reemployUntil|pensionStart|until|retireLivingAge|endAge)$/.test(last)) return Math.min(110, Math.max(0, Math.round(v)));
+  if(/year$/i.test(last)) return Math.min(NOW + 80, Math.max(NOW - 25, Math.round(v)));
+  if(/Rate$|^rate$|inflation|young|mid|senior/.test(last)) return Math.max(0, Math.min(100, v));
+  if(/years|Years|Months|After/.test(last)) return Math.max(0, Math.round(v));
+  return Math.max(0, v);
+}
+
+/* ===== 保存 ===== */
+function load(){ try{ const t = localStorage.getItem(KEY); if(t) return migrate(JSON.parse(t)); }catch(e){} return null; }
+function save(){ try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){} }
+const ui = {tab:'result', range:'all', sel:NOW, tbl:'all', open:{profile:true}, resetArm:false};
+try{ const u = JSON.parse(localStorage.getItem(KEY + '-ui') || 'null'); if(u){ ui.tab = u.tab || ui.tab; ui.open = u.open || ui.open; ui.range = u.range || ui.range; } }catch(e){}
+const saveUi = () => { try{ localStorage.setItem(KEY + '-ui', JSON.stringify({tab:ui.tab, open:ui.open, range:ui.range})); }catch(e){} };
+
+let S = load() || sampleState();
+let R = simulate(S);
+let NEED = needExtra(S);
+const framed = (() => { try{ return window.self !== window.top; }catch(e){ return true; } })();
+
+function recalc(){ R = simulate(S); NEED = R.firstNeg >= 0 ? needExtra(S) : 0; }
+function afterChange(rerender){
+  if(S.sample){ S.sample = false; rerender = true; }
+  save(); recalc();
+  if(rerender) render(); else updateLive();
+}
+function toast(msg){
+  const t = $('#toast'); t.textContent = msg; t.hidden = false;
+  clearTimeout(toast._t); toast._t = setTimeout(() => t.hidden = true, 2400);
+}
+
+/* ===== 入力部品 ===== */
+function numRow(label, k, unit, o = {}){
+  const id = fid(k);
+  return `<div class="row"><label for="${id}">${label}</label><div class="inp"><input id="${id}" type="text" inputmode="decimal" autocomplete="off" data-k="${k}" ${o.rr ? 'data-rr="1"' : ''} value="${fmtIn(getP(S, k))}"><span class="u">${unit}</span></div>${o.live ? `<p class="hint live" data-live="${o.live}">${LIVE[o.live.split(':')[0]](o.live.split(':')[1])}</p>` : ''}${o.hint ? `<p class="hint">${o.hint}</p>` : ''}</div>`;
+}
+function stepper(k, o = {}){
+  const id = fid(k);
+  return `<div class="stp"><button type="button" data-step="${k}" data-d="-1" ${o.rr ? 'data-rr="1"' : ''} aria-label="1つ減らす">−</button><input id="${id}" type="text" inputmode="numeric" data-k="${k}" ${o.rr ? 'data-rr="1"' : ''} value="${fmtIn(getP(S, k))}"><button type="button" data-step="${k}" data-d="1" ${o.rr ? 'data-rr="1"' : ''} aria-label="1つ増やす">＋</button></div>`;
+}
+function stepRow(label, k, o = {}){
+  return `<div class="row"><label for="${fid(k)}">${label}</label>${stepper(k, o)}${o.live ? `<p class="hint live" data-live="${o.live}">${LIVE[o.live.split(':')[0]](o.live.split(':')[1])}</p>` : ''}${o.hint ? `<p class="hint">${o.hint}</p>` : ''}</div>`;
+}
+function seg(k, opts, t = 'str'){
+  const cur = getP(S, k);
+  return `<div class="seg" role="group">${opts.map(([v, l]) => `<button type="button" data-set="${k}" data-v="${v}" data-t="${t}" aria-pressed="${String(cur) === String(v)}">${l}</button>`).join('')}</div>`;
+}
+function segRow(label, k, opts, t = 'str', hint = ''){
+  return `<div class="row"><span class="lbl">${label}</span>${seg(k, opts, t)}${hint ? `<p class="hint">${hint}</p>` : ''}</div>`;
+}
+function swRow(label, k, hint = ''){
+  const id = fid(k);
+  return `<div class="row"><label for="${id}">${label}</label><label class="sw"><input id="${id}" type="checkbox" data-k="${k}" ${getP(S, k) ? 'checked' : ''}><span></span></label>${hint ? `<p class="hint">${hint}</p>` : ''}</div>`;
+}
+function selRow(label, k, opts, t = 'str', hint = ''){
+  const id = fid(k), cur = getP(S, k);
+  return `<div class="row"><label for="${id}">${label}</label><select id="${id}" class="wide" data-k="${k}" data-t="${t}">${opts.map(([v, l]) => `<option value="${v}" ${String(cur) === String(v) ? 'selected' : ''}>${l}</option>`).join('')}</select>${hint ? `<p class="hint">${hint}</p>` : ''}</div>`;
+}
+function textRow(label, k){
+  const id = fid(k);
+  return `<div class="row"><label for="${id}">${label}</label><input id="${id}" class="txt" type="text" data-k="${k}" data-t="str" value="${esc(getP(S, k))}" maxlength="12"></div>`;
+}
+const osakaBox = (title, body, src = '') => `<div class="osaka"><span class="tag">大阪の相場</span><b>${title}</b>${body}${src ? `<span class="src">${src}</span>` : ''}</div>`;
+
+/* ===== ライブ表示（入力中に更新） ===== */
+const P = () => persons(S);
+const ageAt = (y, i = 0) => S.people[i].age + (y - NOW);
+const LIVE = {
+  net: i => { const p = S.people[i]; if(p.inputType === 'net') return `手取り 月 約${(p.income/12).toFixed(1)}万円`; const n = netNow(p); return `手取り 約${man(n)}円（月 約${(n/12).toFixed(1)}万円）`; },
+  proj: i => { const p = S.people[i]; const ages = [40, 50, p.retireAge - 1].filter(a => a > p.age); if(!ages.length) return ''; return '年収の見込み：' + ages.map(a => `${a}歳 約${man(projectGross(p, a))}`).join(' / '); },
+  pension: i => { const p = S.people[i]; const v = p.pensionAuto ? estimatePension(p) : +p.pensionManual; return `年金の目安：年 約${man(v)}円（月 約${(v/12).toFixed(1)}万円・手取り・今の価値）`; },
+  living: () => { const v = sumLiving(S.living); return `合計 月 ${man(v)}円（年 ${man(v*12)}円）`; },
+  rentRef: () => { const a = RENT_AREAS.find(x => x.id === S.area) || RENT_AREAS[1]; return `このエリアの${S.housing.layout}：約${a.r[S.housing.layout]}万円/月`; },
+  loan: () => { const b = S.housing.buy; const L = Math.max(0, b.price - b.down); const m = pmt(L, b.rate, b.years*12); return `借入 ${man(L)}円 ／ 毎月の返済 約${m.toFixed(1)}万円（総返済 約${man(m*b.years*12)}円）`; },
+  buyInit: () => { const b = S.housing.buy; return `購入時に必要な現金：約${man(b.down + b.price*b.costRate/100)}円（頭金＋諸費用）`; },
+  kidAge: i => { const k = S.children[i]; if(!k) return ''; const a = ageAt(k.birthYear); return `${S.people[0].name}が${a}歳のとき` + (S.mode === 'couple' ? `・${S.people[1].name}が${ageAt(k.birthYear, 1)}歳のとき` : ''); },
+  kidTotal: i => { const k = S.children[i]; if(!k) return ''; let t = 0; for(let a = 0; a <= 21; a++){ const c = childCost(k, a, k.birthYear + a, S); t += c.edu; } return `保育・教育費の合計：約${man(t)}円（大学卒業まで・物価上昇なし）`; },
+  invest: () => { const s = S.savings; const yrs = Math.max(0, s.until - S.people[0].age); const r = s.rate/100; const fv = r ? s.monthly*12*((Math.pow(1+r, yrs)-1)/r) : s.monthly*12*yrs; return `積立だけで ${yrs}年後に 約${man(fv)}円（元本 ${man(s.monthly*12*yrs)}円）`; },
+  retire: () => `老後の生活費は ${S.people[0].name}が${S.retireLivingAge}歳になる年から切り替え`,
+};
+function updateLive(){
+  $$('[data-live]').forEach(el => { const [k, a] = el.dataset.live.split(':'); if(LIVE[k]) el.textContent = LIVE[k](a); });
+  $$('[data-sum]').forEach(el => { el.textContent = SUMS[el.dataset.sum](); });
+  updatePill();
+}
+
+/* ===== 状態の判定 ===== */
+function status(){
+  const rows = R.rows, min = rows[R.minI];
+  if(R.firstNeg >= 0) return {cls:'bad', label:'資金不足', min};
+  const liv = sumLiving(S.living)*6;
+  if(min.total < liv) return {cls:'warn', label:'ギリギリ', min};
+  return {cls:'good', label:'見通しOK', min};
+}
+function updatePill(){
+  const st = status(), b = $('#hpill');
+  b.className = 'hpill ' + st.cls;
+  const v = st.min.total, mv = Math.abs(v) >= 10000 ? (v < 0 ? '−' : '') + (Math.abs(v)/10000).toFixed(1) + '億' : man(v);
+  b.innerHTML = `${st.label}<small>最少 ${mv}円<span class="yr">・${st.min.y}年</span></small>`;
+}
+
+/* ===== 入力タブ ===== */
+const SUMS = {
+  profile: () => S.mode === 'single' ? `${S.people[0].name} ${S.people[0].age}歳` : `${S.people[0].name} ${S.people[0].age}歳・${S.people[1].name} ${S.people[1].age}歳`,
+  income: () => P().map(p => `${p.name} ${man(p.income)}`).join('・'),
+  house: () => S.housing.buyOn ? `家賃 ${S.housing.rent}万 → ${S.housing.buy.year}年に購入` : `家賃 月${S.housing.rent}万円`,
+  living: () => `月 ${man(sumLiving(S.living))}円`,
+  kids: () => S.children.length ? S.children.map(k => `${k.birthYear}年`).join('・') + '生まれ' : 'まだ入れていません',
+  money: () => `預金 ${man(S.savings.cash)}・投資 ${man(S.savings.invest)}・積立 月${S.savings.monthly}万`,
+};
+function sec(id, icon, title, body){
+  return `<details class="sec" data-sec="${id}" ${ui.open[id] ? 'open' : ''}><summary><span class="ic">${svgIcon(icon)}</span><span class="tx"><span class="ttl">${title}</span><span class="sub" data-sum="${id}">${SUMS[id]()}</span></span><svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></summary><div class="sec-body">${body}</div></details>`;
+}
+function renderInput(){
+  const ps = P();
+  const areaOpts = RENT_AREAS.map(a => [a.id, a.label]);
+  const profile = `
+    <div class="group">${segRow('人数', 'mode', [['couple','ふたり'],['single','ひとり']])}
+      ${ps.map((p, i) => textRow(i ? '相手の呼び名' : 'あなたの呼び名', `people.${i}.name`) + stepRow(`${esc(p.name)}の年齢`, `people.${i}.age`, {rr:1})).join('')}
+      ${selRow('住んでいるエリア', 'area', areaOpts, 'str', '家賃の相場や大阪市の子育て支援の目安に使います')}
+    </div>`;
+  const income = ps.map((p, i) => {
+    const g = GROWTH[p.growth];
+    return `<div class="group"><div class="gh"><b>${esc(p.name)}</b></div>
+      ${numRow(p.inputType === 'net' ? '手取りの年収' : '年収（額面・ボーナス込み）', `people.${i}.income`, '万円', {live:`net:${i}`})}
+      <div class="row"><div class="chips">${[0,200,300,400,500,600,700,800].map(v => `<button type="button" class="chip" data-set="people.${i}.income" data-v="${v}" data-t="num" aria-pressed="${+p.income === v}">${v}万</button>`).join('')}</div></div>
+      ${segRow('入力のしかた', `people.${i}.inputType`, [['gross','額面で入力'],['net','手取りで入力']], 'str', '源泉徴収票の「支払金額」が額面です。手取りは税金や社会保険料を引いた金額です。')}
+      <div class="row"><span class="lbl">年収の上がり方</span><div class="chips">${Object.entries(GROWTH).map(([k, v]) => `<button type="button" class="chip" data-act="growth" data-a="${i}:${k}" aria-pressed="${p.growth === k}">${v.label}<small>${v.desc}</small></button>`).join('')}</div>
+        <p class="hint live" data-live="proj:${i}">${LIVE.proj(i)}</p></div>
+      <details class="more"><summary>昇給率をくわしく設定</summary>
+        ${numRow('〜39歳の昇給率', `people.${i}.young`, '%/年')}${numRow('40〜54歳の昇給率', `people.${i}.mid`, '%/年')}${numRow('55歳〜の昇給率', `people.${i}.senior`, '%/年')}
+      </details>
+      ${stepRow('定年の年齢', `people.${i}.retireAge`, {rr:1})}
+      ${stepRow('何歳まで働く（再雇用など）', `people.${i}.reemployUntil`, {rr:1})}
+      ${numRow('定年後の年収（定年前の何%か）', `people.${i}.reemployRate`, '%', {hint:'再雇用ではおよそ5〜7割になることが多いです'})}
+      ${numRow('退職金', `people.${i}.severance`, '万円', {hint:'会社の制度で大きく違います。わからなければ 0〜1,000万円くらいで試してみてください'})}
+      ${stepRow('年金をもらい始める年齢', `people.${i}.pensionStart`, {rr:1})}
+      <div class="row"><label for="f-pa-${i}">年金額を自分で入れる</label><label class="sw"><input id="f-pa-${i}" type="checkbox" data-k="people.${i}.pensionAuto_x" ${p.pensionAuto ? '' : 'checked'}><span></span></label></div>
+      ${p.pensionAuto ? `<div class="row"><p class="hint live" data-live="pension:${i}">${LIVE.pension(i)}</p><p class="hint">年収と働く年数から自動で計算した目安です。「ねんきん定期便」の金額がわかれば自分で入れるとより正確です。</p></div>`
+        : numRow('年金（年額・手取り）', `people.${i}.pensionManual`, '万円', {live:`pension:${i}`})}
+    </div>`;
+  }).join('') + osakaBox('年収の目安', '<p>全国の会社員の平均年収は <b>487万円</b>（男性597万円・女性342万円）。男性は55〜59歳の734万円がピークで、20代後半から30年で約1.7〜1.8倍になります。「標準」はこの上がり方に近い設定です。</p>', '国税庁「民間給与実態統計調査」令和7年分');
+  const H = S.housing, b = H.buy;
+  const area = RENT_AREAS.find(x => x.id === S.area) || RENT_AREAS[1];
+  const house = `
+    <div class="group"><div class="gh"><b>いまの住まい（賃貸）</b></div>
+      ${numRow('家賃（管理費こみ）', 'housing.rent', '万円/月')}
+      <div class="row full">${osakaBox('家賃の相場（' + esc(area.label.split('（')[0]) + '）',
+        `${seg('housing.layout', LAYOUTS.map(l => [l, l]))}<p>${LAYOUTS.map(l => `${l} 約${area.r[l]}万円`).join('　')}</p><div class="btns"><button type="button" class="btn small" data-act="rentPreset">${H.layout}の相場（${area.r[H.layout]}万円）を入れる</button></div>`,
+        'CHINTAI掲載物件の2LDK平均（2026年10月）をもとにした目安。1LDK・3LDKは推計。駅からの距離や築年数で大きく変わります。')}</div>
+      ${(H.moves || []).map((m, j) => `<div class="row"><span class="lbl"><b>住み替え ${j+1}</b></span><button type="button" class="link" data-act="delMove" data-a="${j}">削除</button></div>
+        ${stepRow('引っ越す年', `housing.moves.${j}.year`, {rr:1})}${numRow('新しい家賃', `housing.moves.${j}.rent`, '万円/月')}${numRow('引っ越し・初期費用', `housing.moves.${j}.cost`, '万円', {hint:'大阪は礼金・敷引きなどで家賃の3〜5か月分が目安'})}`).join('')}
+      <div class="row"><button type="button" class="btn line small" data-act="addMove">＋ 賃貸で住み替える予定を追加</button></div>
+    </div>
+    <div class="group">
+      ${swRow('家を買う予定がある', 'housing.buyOn')}
+      ${H.buyOn ? `
+      ${stepRow('買う年', 'housing.buy.year', {rr:1})}
+      <div class="row"><span class="lbl">物件の種類</span><div class="chips">${Object.entries(BUY_TYPES).map(([k, v]) => `<button type="button" class="chip" data-act="buyType" data-a="${k}" aria-pressed="${b.type === k}">${v.label}</button>`).join('')}</div>
+        <p class="hint">${esc((BUY_TYPES[b.type]||{}).src || '')}</p></div>
+      ${numRow('物件の価格', 'housing.buy.price', '万円')}
+      ${numRow('頭金', 'housing.buy.down', '万円')}
+      ${numRow('諸費用（物件価格の%）', 'housing.buy.costRate', '%', {hint:'新築は3〜5%、中古は6〜8%が目安', live:'buyInit'})}
+      ${numRow('金利', 'housing.buy.rate', '%')}
+      <div class="row"><div class="chips">${RATE_CHIPS.map(([v, l]) => `<button type="button" class="chip" data-set="housing.buy.rate" data-v="${v}" data-t="num" aria-pressed="${+b.rate === v}">${l} ${v}%</button>`).join('')}</div>
+        <p class="hint">2026年10月の主要銀行：変動 1.2〜1.7%台、10年固定 3.4〜4.0%台、フラット35 3.83%</p></div>
+      ${numRow('返済期間', 'housing.buy.years', '年', {live:'loan'})}
+      ${swRow('将来の金利上昇を想定する', 'housing.buy.rateUp', '変動金利の場合におすすめ')}
+      ${b.rateUp ? numRow('何年後から', 'housing.buy.rateUpAfter', '年後') + numRow('上がったあとの金利', 'housing.buy.rateAfter', '%') : ''}
+      ${numRow('管理費・修繕積立金', 'housing.buy.mgmt', '万円/月', {hint:'マンションは月2〜4万円。一戸建ても修繕用に月1〜2万円を積み立てておくと安心'})}
+      ${numRow('固定資産税', 'housing.buy.tax', '万円/年')}
+      ${swRow('住宅ローン控除を使う', 'housing.buy.ded', '年末のローン残高の0.7%が税金から戻ります（所得税と住民税の一部が上限）')}
+      ${b.ded ? numRow('控除を受ける年数', 'housing.buy.dedYears', '年') + numRow('対象になる残高の上限', 'housing.buy.dedCap', '万円', {hint:'省エネ性能や子育て世帯かどうかで変わります'}) : ''}
+      ` : '<div class="row"><p class="hint">オンにすると、購入する年・価格・ローンを入れられます。すでに持ち家でローンがある場合は「買う年」を今年、価格にローン残高、頭金と諸費用を0にしてください。</p></div>'}
+    </div>
+    ${osakaBox('大阪で家を買うときの目安', '<ul><li>新築マンション：大阪市 平均5,425万円、大阪府 5,467万円（2026年1〜7月）</li><li>中古マンション：近畿圏の成約平均 3,206万円、中古一戸建て 2,384万円（2025年7〜9月）</li></ul>', '不動産経済研究所（長谷工総合研究所まとめ）、近畿レインズ')}`;
+  const single = S.mode === 'single';
+  const living = `
+    <div class="group">
+      <div class="row"><span class="lbl">かんたん設定</span><div class="chips">${Object.entries(LIVING_PRESETS).map(([k, v]) => `<button type="button" class="chip" data-act="livingPreset" data-a="${k}" aria-pressed="${S.livingPreset === k}">${v.label}<small>月${man(sumLiving(v.v)*(single ? 0.6 : 1))}</small></button>`).join('')}</div>
+      <p class="hint">${single ? 'ひとり暮らしの目安' : 'ふたり暮らしの目安'}です。家賃と子どもの費用は別のところで計算するので、ここには入れません。</p></div>
+      ${LIVING_ITEMS.map(([k, l]) => numRow(l, `living.${k}`, '万円/月')).join('')}
+      <div class="row"><p class="hint live" data-live="living">${LIVE.living()}</p></div>
+    </div>
+    <div class="group"><div class="gh"><b>老後の生活費</b></div>
+      ${numRow('老後の生活費（家賃・ローンは別）', 'retireLiving', '万円/月', {hint:'総務省の家計調査では、高齢夫婦の無職世帯の支出は月25万円ほど（住居費が少ない持ち家中心の数字）'})}
+      ${stepRow(`切り替える年齢（${esc(S.people[0].name)}）`, 'retireLivingAge', {rr:1})}
+    </div>`;
+  const whoOpts = single ? [['none','なし'],['A', esc(S.people[0].name)]] : [['none','なし'],['A', esc(S.people[0].name)],['B', esc(S.people[1].name)],['both','ふたり']];
+  const kids = `
+    ${S.children.map((k, i) => `<div class="group"><div class="gh"><b>${esc(k.name)}</b><button type="button" class="link" data-act="delChild" data-a="${i}">削除</button></div>
+      ${stepRow('生まれる年（予定）', `children.${i}.birthYear`, {rr:1, live:`kidAge:${i}`})}
+      ${selRow('小学校に入るまで', `children.${i}.nursery`, Object.entries(NURSERY).map(([v, o]) => [v, o.label]))}
+      ${segRow('小学校', `children.${i}.elem`, [['pub','公立'],['pri','私立']])}
+      ${segRow('中学校', `children.${i}.jhs`, [['pub','公立'],['pri','私立']])}
+      ${segRow('高校', `children.${i}.hs`, [['pub','公立'],['pri','私立']])}
+      ${selRow('高校のあと', `children.${i}.univ`, Object.entries(UNIV).map(([v, o]) => [v, o.label]))}
+      ${k.univ !== 'none' ? swRow('ひとり暮らし（下宿）で通う', `children.${i}.away`, '仕送り 年96万円と、住まいの準備 38万円を加えます') : ''}
+      <div class="row"><p class="hint live" data-live="kidTotal:${i}">${LIVE.kidTotal(i)}</p></div>
+      ${numRow('出産・ベビー用品の自己負担', `children.${i}.birthCost`, '万円', {hint:'出産費用（全国平均 約52万円）は出産育児一時金50万円でほぼまかなえます。差額や個室代、ベビー用品の分です'})}
+      ${segRow('育休をとる人', `children.${i}.leaveWho`, whoOpts)}
+      ${k.leaveWho !== 'none' ? numRow('育休の長さ', `children.${i}.leaveMonths`, 'か月', {hint:'育休中は給付金で手取りのおよそ8割（6か月以降は6割）になる想定です'}) : ''}
+      ${segRow('時短勤務をする人', `children.${i}.shortWho`, whoOpts.filter(w => w[0] !== 'both'))}
+      ${k.shortWho !== 'none' ? numRow('時短の期間', `children.${i}.shortYears`, '年') + numRow('時短中の年収（ふだんの何%か）', `children.${i}.shortRate`, '%') : ''}
+    </div>`).join('')}
+    <div class="btns"><button type="button" class="btn line" data-act="addChild">＋ 子どもを追加</button></div>
+    <div class="group">
+      ${segRow('子どもの生活費（食費・服など）', 'childLevel', [[0.8,'少なめ'],[1,'ふつう'],[1.2,'多め']], 'num', 'ふつう＝未就学 年50万円、小学生 60万円、中学生 70万円、高校生 75万円ほど')}
+      ${swRow('大阪市に住んでいる', 'osakaCity', '0〜2歳の保育料無償化（2026年9月から第1子も）と、塾・習い事代の助成（小5〜中3・月1万円）を反映します')}
+      ${swRow('大阪府の高校授業料無償化を反映', 'osakaHsFree', '2026年度から全学年・所得制限なし。私立は標準授業料63万円までが対象です')}
+      ${swRow('児童手当を入れる', 'childAllowance', '0〜2歳 月1.5万円、3歳〜高校生 月1万円、第3子以降 月3万円')}
+    </div>
+    ${osakaBox('大阪の子育て支援', '<ul><li>大阪市：認可保育所などの0〜2歳の保育料を第1子から無償化（2026年9月〜）</li><li>大阪市：習い事・塾代助成 小5〜中3に月1万円まで</li><li>大阪府：高校の授業料を所得制限なしで無償化（2026年度に全学年）</li><li>大阪公立大学：府内に住む学生の授業料などを無償化</li><li>教育費の目安：公立小 年34万円、私立小 183万円、公立中 54万円、私立中 156万円</li></ul>', '大阪市・大阪府の発表、文部科学省「子供の学習費調査」令和5年度')}`;
+  const sv = S.savings;
+  const money = `
+    <div class="group">
+      ${numRow('いまの預金（ふたり合計）', 'savings.cash', '万円')}
+      ${numRow('いまの投資（NISAなど）', 'savings.invest', '万円')}
+      ${numRow('毎月の積立投資', 'savings.monthly', '万円/月')}
+      ${stepRow(`積立をやめる年齢（${esc(S.people[0].name)}）`, 'savings.until', {rr:1})}
+      ${numRow('想定の利回り', 'savings.rate', '%/年')}
+      <div class="row"><div class="chips">${[0,1,3,5].map(v => `<button type="button" class="chip" data-set="savings.rate" data-v="${v}" data-t="num" aria-pressed="${+sv.rate === v}">${v}%${v === 3 ? '（おすすめ）' : ''}</button>`).join('')}</div>
+        <p class="hint live" data-live="invest">${LIVE.invest()}</p></div>
+      ${swRow('預金が足りない年は投資から取り崩す', 'savings.autoSell')}
+    </div>`;
+  return `<div class="view">
+    <div><h2>入力</h2><p class="lead">わかるところだけでOK。変えるとすぐに結果に反映されます。</p></div>
+    <div class="inputs">
+      <div class="view">${sec('profile', 'people', 'ふたりのこと', profile)}${sec('income', 'yen', '収入', income)}${sec('money', 'bank', '貯金と投資', money)}</div>
+      <div class="view">${sec('house', 'home', '住まい', house)}${sec('living', 'cart', '毎月の生活費', living)}${sec('kids', 'baby', '子ども', kids)}</div>
+    </div></div>`;
+}
+
+/* ===== 結果タブ ===== */
+function rangeRows(){
+  const rows = R.rows;
+  if(ui.range === '20') return rows.slice(0, 21);
+  if(ui.range === 'work'){ const a = S.people[0]; const lim = Math.max(a.retireAge, a.reemployUntil); return rows.filter(r => r.ages[0] <= lim); }
+  return rows;
+}
+function ageLabel(r){ return R.P.map((p, i) => `${esc(p.name)}${r.ages[i]}歳`).join('・'); }
+function renderResult(){
+  const st = status(), rows = R.rows, min = rows[R.minI], last = R.last, A = S.people[0];
+  const now = rows[0];
+  const at = age => rows.find(r => r.ages[0] === age);
+  const r65 = at(Math.max(A.reemployUntil, 65)) || last;
+  let head;
+  if(R.firstNeg >= 0){ const n = rows[R.firstNeg]; head = `${n.y}年（${esc(A.name)}${n.ages[0]}歳）に<br>お金が足りなくなりそうです`; }
+  else if(st.cls === 'warn') head = `${S.endAge}歳までもちますが、<br>${min.y}年ごろは余裕が少なめです`;
+  else head = `${S.endAge}歳まで、お金は<br>足りる見通しです`;
+  const banner = S.sample ? `<div class="banner"><p><b>いま表示しているのはサンプルです。</b>ふたりの年収や家賃を入れると、自分たちの表になります。</p><button type="button" class="btn" data-act="openWiz">かんたん設定（3分）</button></div>`
+    : S.yearShifted ? `<div class="banner"><p>年が変わったので、年齢を${S.yearShifted}歳ずつ進めました。<b>いまの預金額</b>も更新しましょう。</p><button type="button" class="btn small" data-act="ackYear">OK</button></div>` : '';
+  const adv = advice();
+  return `<div class="view">${banner}
+    <section class="hero"><span class="eyebrow">${NOW}年から${A.name ? esc(A.name) + 'が' : ''}${S.endAge}歳になるまでのお金の流れ</span>
+      <h1>${head}</h1><span class="status ${st.cls}">${st.label}</span></section>
+    <div class="kpis">
+      <div class="kpi"><div class="l">今年の収支</div><div class="v ${now.bal < 0 ? 'neg' : ''}">${man(now.bal)}円</div><div class="s">手取り ${man(now.incT)} − 支出 ${man(now.outT)}</div></div>
+      <div class="kpi"><div class="l">いちばん少ない時</div><div class="v ${min.total < 0 ? 'neg' : ''}">${man(min.total)}円</div><div class="s">${min.y}年・${esc(A.name)}${min.ages[0]}歳</div></div>
+      <div class="kpi"><div class="l">${esc(A.name)}${r65.ages[0]}歳の時点</div><div class="v ${r65.total < 0 ? 'neg' : ''}">${man(r65.total)}円</div><div class="s">${r65.y}年の資産（預金＋投資）</div></div>
+      <div class="kpi"><div class="l">${S.endAge}歳の時点</div><div class="v ${last.total < 0 ? 'neg' : ''}">${man(last.total)}円</div><div class="s">${last.y}年の資産</div></div>
+    </div>
+    <div class="charts">
+      <div class="card"><div class="chart-head"><h3>資産の推移</h3>${seg2('range', [['all','全期間'],['work','働く間'],['20','20年']])}</div>
+        <div class="chart" id="ch-assets"></div>
+        <div class="legend"><span><i class="lg-acc"></i>資産合計</span><span><i class="lg-inv"></i>うち投資</span><span><i class="lg-ev"></i>大きな出来事</span></div></div>
+      <div class="card"><div class="chart-head"><h3>毎年の収支</h3><span class="hint">グラフをタップで内訳</span></div>
+        <div class="chart" id="ch-flow"></div>
+        <div class="legend"><span><i class="lg-pos"></i>黒字</span><span><i class="lg-neg"></i>赤字</span></div></div>
+    </div>
+    <div class="card yp" id="yp">${yearPanel()}</div>
+    <h3>ひとことアドバイス</h3>
+    <div class="advice">${adv.map(a => `<div class="adv"><span class="k ${a.k}">${a.t}</span><p>${a.m}</p></div>`).join('')}</div>
+    <p class="notes">※ 税金・社会保険料・年金は概算です。金額は「万円」、将来の生活費・教育費・家賃は物価上昇率（${S.inflation}%/年）で増える前提で計算しています。</p>
+  </div>`;
+}
+function seg2(key, opts){
+  return `<div class="seg" role="group">${opts.map(([v, l]) => `<button type="button" data-act="${key}" data-a="${v}" aria-pressed="${ui[key] === v}">${l}</button>`).join('')}</div>`;
+}
+function yearPanel(){
+  const r = R.rows.find(x => x.y === ui.sel) || R.rows[0];
+  const items = (arr, sign) => arr.slice().sort((a, b) => b.v - a.v).map(o => `<div class="it"><span>${esc(o.label)}</span><span class="amt">${man(o.v)}</span></div>`).join('');
+  const kids = R.kids.map((k, i) => r.kidAges[i] >= 0 ? `${esc(k.name)}${r.kidAges[i]}歳` : '').filter(Boolean).join('・');
+  return `<div class="yp-h"><b>${r.y}年の内訳</b><span>${ageLabel(r)}${kids ? '・' + kids : ''}</span></div>
+    ${r.notes.length || r.evs.length ? `<p class="hint">出来事：${esc([...r.notes, ...r.evs].join('、'))}</p>` : ''}
+    <div class="yp-cols">
+      <div class="items"><h4>収入</h4>${items(r.inc) || '<div class="it"><span>なし</span><span></span></div>'}<div class="it tot"><span>収入の合計</span><span class="amt">${man(r.incT)}</span></div></div>
+      <div class="items"><h4>支出</h4>${items(r.out)}<div class="it tot"><span>支出の合計</span><span class="amt">${man(r.outT)}</span></div></div>
+    </div>
+    <div class="items">
+      <div class="it tot"><span>この年の収支</span><span class="amt ${r.bal < 0 ? 'neg' : 'pos'}">${r.bal >= 0 ? '＋' : ''}${man(r.bal)}</span></div>
+      ${r.contrib ? `<div class="it"><span>積立投資にまわした額</span><span class="amt">${man(r.contrib)}</span></div>` : ''}
+      ${r.sold ? `<div class="it"><span>投資から取り崩した額</span><span class="amt">${man(r.sold)}</span></div>` : ''}
+      <div class="it"><span>年末の預金 / 投資</span><span class="amt">${man(r.cash)} / ${man(r.inv)}</span></div>
+      <div class="it tot"><span>年末の資産合計</span><span class="amt ${r.total < 0 ? 'neg' : ''}">${man(r.total)}</span></div>
+    </div>`;
+}
+function advice(){
+  const out = [], rows = R.rows, A = S.people[0], now = rows[0];
+  if(R.firstNeg >= 0){
+    const n = rows[R.firstNeg];
+    out.push({k:'bad', t:'要注意', m: NEED != null
+      ? `${n.y}年（${esc(A.name)}${n.ages[0]}歳）から資産がマイナスになります。<b>毎月あと約${NEED}万円</b>の節約か収入アップで、${S.endAge}歳までマイナスにならない計算です。`
+      : `${n.y}年から資産がマイナスになります。住まい・教育・大きなイベントの金額や時期を見直してみましょう。`});
+  }
+  const netInc = now.inc.filter(o => o.k === 'work').reduce((a, b) => a + b.v, 0);
+  if(netInc > 0){
+    const hr = now.housing/netInc*100;
+    out.push({k: Math.round(hr) > 30 ? 'warn' : 'info', t:'住居費', m:`今年の住居費は手取りの<b>${Math.round(hr)}%</b>です。${Math.round(hr) > 30 ? '目安の25〜30%を超えています。' : '目安の25〜30%以内です。'}`});
+    const sr = (now.bal)/now.incT*100;
+    out.push({k: sr < 10 ? 'warn' : 'good', t:'貯蓄率', m:`今年は手取りの<b>${Math.max(0, Math.round(sr))}%</b>を貯められる計算です（積立投資の分を含む）。${sr < 10 ? 'まずは10〜20%を目指すと安心です。' : sr >= 20 ? 'よいペースです。' : 'この調子で続けましょう。'}`});
+  }
+  if(R.kids.length){
+    let peak = rows[0]; rows.forEach(r => { if(r.child > peak.child) peak = r; });
+    out.push({k:'info', t:'教育費', m:`子どもにかかるお金がいちばん多いのは<b>${peak.y}年</b>で、年${man(peak.child)}円です。この年までに準備しておけると安心です。`});
+  }
+  const tight = rows.filter(r => r.t > 0 && r.bal < 0).sort((a, b) => a.bal - b.bal)[0];
+  if(tight && tight.bal < -100) out.push({k:'info', t:'大きな出費', m:`いちばん赤字が大きいのは<b>${tight.y}年</b>（${man(tight.bal)}円）。${esc([...tight.notes, ...tight.evs].slice(0, 3).join('、')) || '支出が重なる年'}が重なっています。`});
+  if(!(+S.savings.monthly > 0)){
+    const fv = 3*12*((Math.pow(1.03, 30) - 1)/0.03);
+    out.push({k:'info', t:'ヒント', m:`積立投資がまだ0円です。例えば月3万円を年3%で30年続けると約${man(fv)}円になります（元本1,080万円）。NISAなら利益に税金がかかりません。`});
+  }
+  return out.slice(0, 6);
+}
+
+/* ===== グラフ ===== */
+function niceTicks(mn, mx, n = 4){
+  if(mx - mn < 1){ mx = mn + 1; }
+  const raw = (mx - mn)/n, mag = Math.pow(10, Math.floor(Math.log10(raw)));
+  const step = [1, 2, 2.5, 5, 10].map(s => s*mag).find(s => s >= raw) || 10*mag;
+  const lo = Math.floor(mn/step)*step, hi = Math.ceil(mx/step)*step, t = [];
+  for(let v = lo; v <= hi + step/2; v += step) t.push(Math.round(v*100)/100);
+  return t;
+}
+const axisMan = v => v === 0 ? '0' : Math.abs(v) >= 10000 ? (v/10000).toFixed(Math.abs(v) % 10000 ? 1 : 0) + '億' : Math.round(v).toLocaleString('ja-JP') + '万';
+function xLabels(rows, X, H, B){
+  const n = rows.length, step = n > 50 ? 10 : n > 24 ? 5 : n > 12 ? 2 : 1;
+  let s = '';
+  rows.forEach((r, i) => { if(r.y % step === 0 && i > 0 && i < n - 1 || (step === 1)){
+    s += `<text x="${X(i)}" y="${H - B + 14}" text-anchor="middle">${r.y}</text><text x="${X(i)}" y="${H - B + 27}" text-anchor="middle">${r.ages[0]}歳</text>`; } });
+  return s;
+}
+function assetSVG(rows, W){
+  const H = 230, L = 50, Rm = 12, T = 16, B = 34, n = rows.length, bw = (W - L - Rm)/n;
+  const vals = rows.map(r => r.total);
+  const tk = niceTicks(Math.min(0, ...vals), Math.max(1, ...vals, ...rows.map(r => r.inv)), 4);
+  const mn = tk[0], mx = tk[tk.length-1];
+  const X = i => L + (i + 0.5)*bw, Y = v => T + (mx - v)/(mx - mn)*(H - T - B);
+  const id = 'c' + Math.random().toString(36).slice(2, 7), y0 = Y(0);
+  const line = rows.map((r, i) => `${i ? 'L' : 'M'}${X(i).toFixed(1)},${Y(r.total).toFixed(1)}`).join('');
+  const area = `M${X(0)},${y0}` + rows.map((r, i) => `L${X(i).toFixed(1)},${Y(r.total).toFixed(1)}`).join('') + `L${X(n-1)},${y0}Z`;
+  const ia = `M${X(0)},${y0}` + rows.map((r, i) => `L${X(i).toFixed(1)},${Y(Math.max(0, Math.min(r.inv, Math.max(0, r.total)))).toFixed(1)}`).join('') + `L${X(n-1)},${y0}Z`;
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="資産の推移グラフ"><defs><clipPath id="${id}p"><rect x="0" y="0" width="${W}" height="${y0}"/></clipPath><clipPath id="${id}n"><rect x="0" y="${y0}" width="${W}" height="${H}"/></clipPath></defs><g class="ax">`;
+  tk.forEach(v => { s += `<line x1="${L}" x2="${W - Rm}" y1="${Y(v)}" y2="${Y(v)}"/><text x="${L - 6}" y="${Y(v) + 3.5}" text-anchor="end">${axisMan(v)}</text>`; });
+  s += xLabels(rows, X, H, B) + '</g>';
+  s += `<path class="a-pos" d="${area}" clip-path="url(#${id}p)"/><path class="a-neg" d="${area}" clip-path="url(#${id}n)"/><path class="a-inv" d="${ia}"/>`;
+  s += `<line class="zero" x1="${L}" x2="${W - Rm}" y1="${y0}" y2="${y0}"/>`;
+  s += `<path class="l-pos" d="${line}" clip-path="url(#${id}p)"/><path class="l-neg" d="${line}" clip-path="url(#${id}n)"/>`;
+  rows.forEach((r, i) => { if(r.once.length || r.notes.some(x => /誕生|住宅購入|大学入学|住み替え/.test(x))) s += `<circle class="ev-dot" cx="${X(i)}" cy="${T - 8}" r="3"/>`; });
+  const mi = rows.reduce((m, r, i) => r.total < rows[m].total ? i : m, 0);
+  s += `<circle class="pt ${rows[mi].total < 0 ? 'neg' : 'acc'}" cx="${X(mi)}" cy="${Y(rows[mi].total)}" r="4"/>`;
+  const lr = rows[n-1];
+  s += `<circle class="pt ${lr.total < 0 ? 'neg' : 'acc'}" cx="${X(n-1)}" cy="${Y(lr.total)}" r="4"/><text class="lbl-end" x="${X(n-1) - 6}" y="${Y(lr.total) + (Y(lr.total) < T + 14 ? 16 : -9)}" text-anchor="end">${man(lr.total)}</text>`;
+  const si = rows.findIndex(r => r.y === ui.sel);
+  if(si >= 0) s += `<line class="cur" x1="${X(si)}" x2="${X(si)}" y1="${T - 2}" y2="${H - B}"/>`;
+  s += `<rect class="hit" x="${L}" y="0" width="${W - L - Rm}" height="${H}"/></svg>`;
+  return {svg:s, L, bw, W};
+}
+function flowSVG(rows, W){
+  const H = 190, L = 50, Rm = 12, T = 10, B = 34, n = rows.length, bw = (W - L - Rm)/n;
+  const vals = rows.map(r => r.bal);
+  const tk = niceTicks(Math.min(0, ...vals), Math.max(0, ...vals), 4);
+  const mn = tk[0], mx = tk[tk.length-1];
+  const X = i => L + (i + 0.5)*bw, Y = v => T + (mx - v)/(mx - mn)*(H - T - B), y0 = Y(0);
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="毎年の収支グラフ"><g class="ax">`;
+  tk.forEach(v => { s += `<line x1="${L}" x2="${W - Rm}" y1="${Y(v)}" y2="${Y(v)}"/><text x="${L - 6}" y="${Y(v) + 3.5}" text-anchor="end">${axisMan(v)}</text>`; });
+  s += xLabels(rows, X, H, B) + '</g>';
+  const w = Math.max(1, bw*0.7);
+  rows.forEach((r, i) => { const y = Y(r.bal); s += `<rect class="${r.bal < 0 ? 'b-neg' : 'b-pos'}" x="${(X(i) - w/2).toFixed(1)}" y="${Math.min(y, y0).toFixed(1)}" width="${w.toFixed(1)}" height="${Math.max(0.5, Math.abs(y - y0)).toFixed(1)}" rx="${Math.min(2, w/3).toFixed(1)}"/>`; });
+  s += `<line class="zero" x1="${L}" x2="${W - Rm}" y1="${y0}" y2="${y0}"/>`;
+  const si = rows.findIndex(r => r.y === ui.sel);
+  if(si >= 0) s += `<line class="cur" x1="${X(si)}" x2="${X(si)}" y1="${T}" y2="${H - B}"/>`;
+  s += `<rect class="hit" x="${L}" y="0" width="${W - L - Rm}" height="${H}"/></svg>`;
+  return {svg:s, L, bw, W};
+}
+function drawCharts(){
+  const a = $('#ch-assets'), f = $('#ch-flow');
+  if(!a) return;
+  const rows = rangeRows();
+  [[a, assetSVG], [f, flowSVG]].forEach(([el, fn]) => {
+    const W = Math.max(280, Math.round(el.clientWidth || 340));
+    const g = fn(rows, W);
+    el.innerHTML = g.svg;
+    const pick = e => {
+      const svg = el.querySelector('svg'), rc = svg.getBoundingClientRect();
+      const x = (e.clientX - rc.left)*(g.W/rc.width);
+      const i = Math.max(0, Math.min(rows.length - 1, Math.floor((x - g.L)/g.bw)));
+      if(rows[i].y !== ui.sel){ ui.sel = rows[i].y; drawCharts(); $('#yp').innerHTML = yearPanel(); }
+    };
+    el.onpointerdown = e => { el._down = true; pick(e); };
+    el.onpointermove = e => { if(el._down || e.pointerType === 'mouse') pick(e); };
+    el.onpointerup = el.onpointercancel = el.onpointerleave = () => { el._down = false; };
+  });
+}
+
+/* ===== イベントタブ ===== */
+function autoItems(){
+  const list = [], ps = P();
+  S.children.forEach(k => {
+    list.push({y:k.birthYear, label:`${k.name}が生まれる`});
+    [[6,'小学校入学'],[12,'中学校入学'],[15,'高校入学'],[18, k.univ === 'none' ? '就職' : '大学入学']].forEach(([a, l]) => list.push({y:k.birthYear + a, label:`${k.name} ${l}`}));
+  });
+  if(S.housing.buyOn) list.push({y:S.housing.buy.year, label:`家を買う（${man(S.housing.buy.price)}円）`});
+  (S.housing.moves || []).forEach(m => list.push({y:m.year, label:`住み替え（家賃${m.rent}万円）`}));
+  ps.forEach(p => { list.push({y:NOW + (p.retireAge - p.age), label:`${p.name} 定年`}); list.push({y:NOW + (p.pensionStart - p.age), label:`${p.name} 年金スタート`}); });
+  return list.filter(x => x.y >= NOW);
+}
+const repLabel = e => !e.repeat ? '' : (e.repeat === 1 ? '毎年' : `${e.repeat}年ごと`) + (e.until ? `・${e.until}年まで` : '');
+function renderEvents(){
+  const by = {};
+  S.events.forEach(e => (by[e.year] = by[e.year] || {u:[], a:[]}).u.push(e));
+  autoItems().forEach(a => (by[a.y] = by[a.y] || {u:[], a:[]}).a.push(a));
+  const years = Object.keys(by).map(Number).sort((a, b) => a - b);
+  const tl = years.map(y => {
+    const ps = P();
+    return `<div class="tl-y"><div class="yy"><b>${y}</b><small>${ps.map(p => `${esc(p.name.slice(0, 4))}${p.age + y - NOW}歳`).join('<br>')}</small></div><div class="tl-list">
+      ${by[y].u.map(e => `<button type="button" class="ev" data-act="editEvent" data-a="${e.id}"><span class="nm">${esc(e.name)}${e.repeat ? `<span class="badge">${repLabel(e)}</span>` : ''}</span><span class="amt ${e.type === 'in' ? 'in' : ''}">${e.type === 'in' ? '＋' : '−'}${man(e.amount)}</span></button>`).join('')}
+      ${by[y].a.map(a => `<div class="ev auto"><span class="nm">${esc(a.label)}<span class="badge">自動</span></span></div>`).join('')}
+    </div></div>`;
+  }).join('');
+  return `<div class="view">
+    <div><h2>これからの予定</h2><p class="lead">旅行・結婚式・車など、やりたいことを入れましょう。毎年や数年ごとの予定も入れられます。子どもや家の予定は「入力」タブの内容から自動で入ります。</p></div>
+    <div class="tpl-grid">${TPL.map(g => `<button type="button" class="tpl" data-act="tpl" data-a="${g.id}">${svgIcon(g.icon)}${g.label}</button>`).join('')}
+</div>
+    <button type="button" class="tpl free" data-act="newEvent">${svgIcon('plus')}自由に予定を追加</button>
+    <div class="tl">${tl || '<p class="empty">まだ予定がありません。上のボタンから追加できます。</p>'}</div>
+  </div>`;
+}
+function openSheet(html){
+  $('#sheet').innerHTML = `<div class="sheet-in"><div class="grab"></div>${html}</div>`;
+  $('#sheet').hidden = false; $('#scrim').hidden = false;
+  document.body.style.overflow = 'hidden';
+}
+function closeSheet(){ $('#sheet').hidden = true; $('#scrim').hidden = true; $('#sheet').innerHTML = ''; document.body.style.overflow = ''; }
+function tplSheet(gid){
+  const g = TPL.find(x => x.id === gid);
+  const A = S.people[0];
+  openSheet(`<div class="sheet-h"><h3>${g.label}</h3><button type="button" class="x" data-act="closeSheet" aria-label="閉じる">×</button></div>
+    ${g.desc ? `<p class="hint">${g.desc}</p>` : ''}
+    ${gid === 'wed' ? `<div class="group"><div class="gh"><b>結婚関連をまとめて追加</b></div>
+      <div class="row"><label for="w-year">結婚式の年</label><div class="stp"><button type="button" data-sstep="w-year" data-d="-1">−</button><input id="w-year" type="text" inputmode="numeric" value="${NOW + 1}"><button type="button" data-sstep="w-year" data-d="1">＋</button></div>
+      <p class="hint">顔合わせ・指輪・結婚式・ご祝儀・新婚旅行・家具家電の7つ（支出 合計${man(TPL[0].items.filter(i => !i.optional && i.type !== 'in').reduce((a, b) => a + b.amount, 0))}円、ご祝儀 ＋206万円）</p></div>
+      <div class="row"><button type="button" class="btn block" data-act="wedSet">まとめて追加する</button></div></div>
+      <p class="hint">1つずつ追加する場合は下から選んでください。</p>` : ''}
+    <div class="group">${g.items.map((it, i) => `<button type="button" class="tpl-item" data-act="tplItem" data-a="${gid}:${i}"><span>${esc(it.name)}<small>${it.repeat ? (it.repeat === 1 ? '毎年' : it.repeat + '年ごと') + '・' : ''}${it.note ? esc(it.note) : (it.type === 'in' ? '収入' : '支出')}</small></span><span class="amt ${it.type === 'in' ? 'in pos' : ''}">${it.type === 'in' ? '＋' : ''}${man(it.amount)}円</span></button>`).join('')}</div>`);
+}
+let draft = null;
+function eventSheet(e, isNew){
+  draft = {...e};
+  const reps = [[0,'1回だけ'],[1,'毎年'],[2,'2年ごと'],[3,'3年ごと'],[5,'5年ごと'],[10,'10年ごと']];
+  if(!reps.some(r => r[0] === draft.repeat)) reps.push([draft.repeat, `${draft.repeat}年ごと`]);
+  openSheet(`<div class="sheet-h"><h3>${isNew ? '予定を追加' : '予定を編集'}</h3><button type="button" class="x" data-act="closeSheet" aria-label="閉じる">×</button></div>
+    <div class="group">
+      <div class="row"><label for="e-name">名前</label><input id="e-name" class="txt" type="text" value="${esc(draft.name)}" maxlength="30" style="width:100%"></div>
+      <div class="row"><span class="lbl">種類</span><div class="seg" data-radio="type">${[['out','支出'],['in','収入']].map(([v, l]) => `<button type="button" data-rv="${v}" aria-pressed="${draft.type === v}">${l}</button>`).join('')}</div></div>
+      <div class="row"><label for="e-amt">金額（1回あたり）</label><div class="inp"><input id="e-amt" type="text" inputmode="decimal" value="${fmtIn(draft.amount)}"><span class="u">万円</span></div></div>
+      <div class="row"><label for="e-year">年</label><div class="stp"><button type="button" data-sstep="e-year" data-d="-1">−</button><input id="e-year" type="text" inputmode="numeric" value="${draft.year}"><button type="button" data-sstep="e-year" data-d="1">＋</button></div><p class="hint" id="e-age"></p></div>
+      <div class="row"><span class="lbl">くり返し</span><div class="seg" data-radio="repeat">${reps.map(([v, l]) => `<button type="button" data-rv="${v}" aria-pressed="${draft.repeat === v}">${l}</button>`).join('')}</div></div>
+      <div class="row" id="e-until-row" ${draft.repeat ? '' : 'hidden'}><label for="e-until">いつまで</label><div class="stp"><button type="button" data-sstep="e-until" data-d="-1">−</button><input id="e-until" type="text" inputmode="numeric" value="${draft.until || (NOW + Math.max(1, 75 - S.people[0].age))}"><button type="button" data-sstep="e-until" data-d="1">＋</button></div><p class="hint" id="e-uage"></p></div>
+      <div class="row"><label for="e-inf">物価上昇を反映する</label><label class="sw"><input id="e-inf" type="checkbox" ${draft.inflate ? 'checked' : ''}><span></span></label><p class="hint">オンにすると、将来の金額が物価に合わせて少しずつ上がります</p></div>
+    </div>
+    <div class="btns"><button type="button" class="btn" data-act="saveEvent">${isNew ? '追加する' : '保存する'}</button>${isNew ? '' : `<button type="button" class="btn danger" data-act="delEvent">削除</button>`}<button type="button" class="btn ghost" data-act="closeSheet">キャンセル</button></div>`);
+  draft._new = isNew;
+  sheetAges();
+}
+function sheetAges(){
+  const y = toNum($('#e-year')?.value), u = toNum($('#e-until')?.value);
+  const lab = yy => isNaN(yy) ? '' : P().map((p, i) => `${p.name}${ageAt(yy, i)}歳`).join('・');
+  if($('#e-age')) $('#e-age').textContent = lab(y);
+  if($('#e-uage')) $('#e-uage').textContent = lab(u);
+}
+function yearSheet(y){
+  ui.sel = y;
+  openSheet(`<div class="sheet-h"><h3>年ごとの内訳</h3><button type="button" class="x" data-act="closeSheet" aria-label="閉じる">×</button></div><div class="card yp">${yearPanel()}</div>`);
+}
+
+/* ===== 年表タブ ===== */
+function renderTable(){
+  const rows = ui.tbl === '5' ? R.rows.filter((r, i) => i === 0 || r.y % 5 === 0 || i === R.rows.length - 1) : R.rows;
+  const kid = r => R.kids.map((k, i) => r.kidAges[i] >= 0 && r.kidAges[i] <= 22 ? r.kidAges[i] : '').filter(x => x !== '').join('/');
+  return `<div class="view">
+    <div class="chart-head"><div><h2>年表（キャッシュフロー表）</h2><p class="lead">行をタップすると内訳が見られます。単位：万円</p></div>${seg2('tbl', [['all','毎年'],['5','5年ごと']])}</div>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>年</th><th>年齢</th><th>収入</th><th>支出</th><th>収支</th><th>資産合計</th><th>預金</th><th>投資</th><th>生活費</th><th>住居費</th><th>子ども</th><th>イベント</th>${R.kids.length ? '<th>子の年齢</th>' : ''}<th style="text-align:left">出来事</th></tr></thead>
+      <tbody>${rows.map(r => `<tr data-act="row" data-a="${r.y}" class="${r === R.rows[R.minI] ? 'min' : ''}"><td><b>${r.y}</b></td><td>${r.ages.join('/')}</td><td>${n0(r.incT)}</td><td>${n0(r.outT)}</td>
+        <td class="tot ${r.bal < 0 ? 'neg' : 'pos'}">${n0(r.bal)}</td><td class="tot ${r.total < 0 ? 'neg' : ''}">${n0(r.total)}</td><td class="${r.cash < 0 ? 'neg' : ''}">${n0(r.cash)}</td><td>${n0(r.inv)}</td>
+        <td>${n0(r.living)}</td><td>${n0(r.housing)}</td><td>${n0(r.child)}</td><td>${n0(r.event)}</td>${R.kids.length ? `<td>${kid(r)}</td>` : ''}<td class="ev-c">${esc([...r.notes, ...r.evs].join('、'))}</td></tr>`).join('')}</tbody>
+    </table></div>
+    <p class="notes">年齢は ${P().map(p => esc(p.name)).join(' / ')} の順。黄色の行は資産がいちばん少ない年です。収支 ＝ 収入 − 支出。積立投資の分は預金から投資へ移しています。</p>
+  </div>`;
+}
+const n0 = v => Math.abs(v) < 0.5 ? '0' : (v < 0 ? '−' : '') + Math.round(Math.abs(v)).toLocaleString('ja-JP');
+
+/* ===== その他タブ ===== */
+function renderMore(){
+  return `<div class="view">
+    <h2>その他</h2>
+    <div class="group"><div class="gh"><b>はじめからやり直す</b></div>
+      <div class="row"><p class="hint">質問に答えるだけで、ふたりの表をつくり直せます。</p><button type="button" class="btn" data-act="openWiz">かんたん設定をひらく</button></div></div>
+    <div class="group"><div class="gh"><b>計算の前提</b></div>
+      ${numRow('物価上昇率', 'inflation', '%/年', {hint:'日銀の目標は2%。最近は2〜3%台の年もあります。0にすると今の値段のまま計算します。'})}
+      <div class="row"><div class="chips">${[0,1,1.5,2].map(v => `<button type="button" class="chip" data-set="inflation" data-v="${v}" data-t="num" aria-pressed="${+S.inflation === v}">${v}%</button>`).join('')}</div></div>
+      ${segRow('何歳まで計算する', 'endAge', [[85,'85歳'],[90,'90歳'],[95,'95歳'],[100,'100歳']], 'num')}
+    </div>
+    <div class="group"><div class="gh"><b>バックアップ・機種変更</b></div>
+      <div class="row"><p class="hint">入力した内容はこの端末のブラウザに自動で保存されます。iPhoneとiPadで同じデータを使うときや、念のための保存には、下のボタンでデータをコピーしてメモアプリなどに貼っておいてください。</p></div>
+      <div class="row"><div class="btns"><button type="button" class="btn" data-act="copyBackup">データをコピー</button>${framed ? '' : '<button type="button" class="btn ghost" data-act="saveFile">ファイルに保存</button>'}<button type="button" class="btn ghost" data-act="pickFile">ファイルから読み込む</button></div></div>
+      <div class="row full"><label for="restore-txt" class="full">コピーしたデータを貼り付けて復元</label><textarea id="restore-txt" placeholder="ここに貼り付け"></textarea><button type="button" class="btn line small" data-act="restoreText">このデータで復元する</button></div>
+      <input type="file" id="file-in" accept=".json,application/json,text/plain" hidden>
+    </div>
+    <div class="group"><div class="gh"><b>使い方</b></div>
+      <div class="row"><ol class="steps"><li><b>入力</b>タブで、年齢・年収・家賃・生活費を入れます（相場ボタンで大阪の目安を入れられます）。</li><li><b>予定</b>タブで、結婚式・旅行・車などを追加します。くり返しの予定もOK。</li><li><b>結果</b>タブで、お金が足りるかどうかと、グラフを確認します。グラフをタップするとその年の内訳が出ます。</li><li><b>年表</b>タブで、1年ずつの数字を表で見られます。</li><li>年に1回、預金額や年収を更新すると精度が上がります。</li></ol></div></div>
+    <div class="group"><div class="gh"><b>計算のしかた（概算）</b></div>
+      <div class="row"><p class="hint">手取り＝額面から社会保険料（約15%）・所得税・住民税を引いた概算です。年金は基礎年金（約83万円/年）＋厚生年金（平均年収×0.5481%×加入年数）の目安を手取り9割で計算し、物価上昇率−0.5%で増える前提です。育休中は手取りの約8割（6か月以降約6割）、投資は毎年の利回りで複利計算し、利益への税金（NISA想定）は考えていません。</p></div></div>
+    <div class="group"><div class="gh"><b>相場データの出典</b></div><div class="row"><ul class="src-list">${SOURCES.map(([t, u]) => `<li><a href="${u}" target="_blank" rel="noopener">${esc(t)}</a></li>`).join('')}<li>大学の費用：日本政策金融公庫「教育費負担の実態調査」（令和3年度）</li><li>子どもの生活費：内閣府「インターネットによる子育て費用に関する調査」をもとにした概算</li></ul></div></div>
+    <div class="group"><div class="gh"><b>リセット</b></div>
+      <div class="row"><div class="btns"><button type="button" class="btn ghost" data-act="loadSample">サンプルを表示</button><button type="button" class="btn danger" data-act="reset">${ui.resetArm ? 'もう一度押すと全部消えます' : 'すべてのデータを消す'}</button></div></div></div>
+  </div>`;
+}
+
+/* ===== かんたん設定（ウィザード） ===== */
+let W = null, wstep = 0;
+function wizInit(){
+  const s = S.sample ? baseState() : S, A = s.people[0], Bp = s.people[1];
+  W = {mode:s.mode, nameA:A.name, nameB:Bp.name, ageA:A.age, ageB:Bp.age, area:s.area, incA:A.income, incB:Bp.income, growth:A.growth in GROWTH ? A.growth : 'std',
+    cash:s.savings.cash, invest:s.savings.invest, monthly:s.savings.monthly, rent:s.housing.rent, layout:s.housing.layout,
+    buy:!!s.housing.buyOn, buyYear:s.housing.buyOn ? s.housing.buy.year : NOW + 5, buyType:s.housing.buy.type || 'usedM',
+    living:s.livingPreset in LIVING_PRESETS ? s.livingPreset : 'std', wed:!S.sample ? s.events.some(e => e.name === '結婚式・披露宴') : true, wedYear:NOW + 1,
+    kids:s.children.length || (S.sample ? 2 : 0), kidYear:s.children[0]?.birthYear || NOW + 3, kidGap:3, tripDom:true, tripAbroad:false, car:false, carYear:NOW + 3};
+  wstep = 0;
+}
+const WSTEPS = ['ふたりのこと','収入','いまの貯金','住まい','生活費','これからの予定'];
+function wSeg(k, opts){ return `<div class="seg">${opts.map(([v, l]) => `<button type="button" data-wset="${k}" data-v="${v}" aria-pressed="${String(W[k]) === String(v)}">${l}</button>`).join('')}</div>`; }
+function wNum(label, k, unit, hint = ''){ return `<div class="row"><label for="w-${k}">${label}</label><div class="inp"><input id="w-${k}" type="text" inputmode="decimal" data-wk="${k}" value="${fmtIn(W[k])}"><span class="u">${unit}</span></div>${hint ? `<p class="hint">${hint}</p>` : ''}</div>`; }
+function wStep(label, k, hint = ''){ return `<div class="row"><label for="w-${k}">${label}</label><div class="stp"><button type="button" data-wstep="${k}" data-d="-1">−</button><input id="w-${k}" type="text" inputmode="numeric" data-wk="${k}" value="${W[k]}"><button type="button" data-wstep="${k}" data-d="1">＋</button></div>${hint ? `<p class="hint">${hint}</p>` : ''}</div>`; }
+function wSw(label, k){ return `<div class="row"><label for="w-${k}">${label}</label><label class="sw"><input id="w-${k}" type="checkbox" data-wk="${k}" ${W[k] ? 'checked' : ''}><span></span></label></div>`; }
+function wChips(k, vals, unit){ return `<div class="row"><div class="chips">${vals.map(v => `<button type="button" class="chip" data-wset="${k}" data-v="${v}" data-t="num" aria-pressed="${+W[k] === v}">${v}${unit}</button>`).join('')}</div></div>`; }
+function renderWiz(){
+  const single = W.mode === 'single', area = RENT_AREAS.find(a => a.id === W.area) || RENT_AREAS[1];
+  let body = '';
+  if(wstep === 0) body = `<p class="lead">まずは基本から。あとで「入力」タブでいつでも変えられます。</p>
+    <div class="group"><div class="row"><span class="lbl">人数</span>${wSeg('mode', [['couple','ふたり'],['single','ひとり']])}</div>
+      <div class="row"><label for="w-nameA">あなたの呼び名</label><input id="w-nameA" class="txt" type="text" data-wk="nameA" data-t="str" value="${esc(W.nameA)}" maxlength="12"></div>
+      ${wStep('あなたの年齢', 'ageA')}
+      ${single ? '' : `<div class="row"><label for="w-nameB">相手の呼び名</label><input id="w-nameB" class="txt" type="text" data-wk="nameB" data-t="str" value="${esc(W.nameB)}" maxlength="12"></div>${wStep('相手の年齢', 'ageB')}`}
+      <div class="row"><label for="w-area">住んでいるエリア</label><select id="w-area" class="wide" data-wk="area" data-t="str">${RENT_AREAS.map(a => `<option value="${a.id}" ${a.id === W.area ? 'selected' : ''}>${a.label}</option>`).join('')}</select></div></div>`;
+  if(wstep === 1) body = `<p class="lead">ボーナス込みの1年分の額面（税金を引く前）を入れてください。だいたいでOKです。</p>
+    <div class="group">${wNum(`${esc(W.nameA)}の年収`, 'incA', '万円')}${wChips('incA', [300,400,500,600,700], '万')}
+      ${single ? '' : wNum(`${esc(W.nameB)}の年収`, 'incB', '万円') + wChips('incB', [0,200,300,400,500,600], '万')}</div>
+    <div class="group"><div class="gh"><b>これから年収はどう上がりそう？</b></div><div class="choice" style="padding-bottom:12px">${Object.entries(GROWTH).map(([k, g]) => `<button type="button" data-wset="growth" data-v="${k}" aria-pressed="${W.growth === k}"><span>${g.label}<small>${g.desc}</small></span><small>〜39歳 ${g.young}%/年</small></button>`).join('')}</div></div>
+    ${osakaBox('参考', '<p>全国の会社員の平均年収は487万円。男性は55〜59歳（734万円）がピークです。</p>', '国税庁 令和7年分')}`;
+  if(wstep === 2) body = `<p class="lead">${single ? '' : 'ふたり合わせた'}いまの貯金と、毎月の積立投資です。</p>
+    <div class="group">${wNum('預金', 'cash', '万円')}${wNum('投資（NISAなど）', 'invest', '万円')}${wNum('毎月の積立投資', 'monthly', '万円/月', 'まだしていなければ0でOK')}</div>`;
+  if(wstep === 3) body = `<p class="lead">いまの家賃と、家を買う予定を教えてください。</p>
+    <div class="group">${wNum('いまの家賃（管理費こみ）', 'rent', '万円/月')}
+      <div class="row full">${osakaBox(esc(area.label.split('（')[0]) + 'の家賃相場', `<div class="chips">${LAYOUTS.map(l => `<button type="button" class="chip" data-wset="rent" data-v="${area.r[l]}" data-t="num" aria-pressed="${+W.rent === area.r[l]}">${l} 約${area.r[l]}万</button>`).join('')}</div>`, 'CHINTAI掲載物件（2026年10月）をもとにした目安')}</div></div>
+    <div class="group"><div class="row"><span class="lbl">家を買う？</span>${wSeg('buy', [['false','買わない・未定'],['true','買うつもり']])}</div>
+      ${W.buy ? `${wStep('買う年', 'buyYear')}<div class="row"><span class="lbl">物件の種類</span><div class="choice" style="flex-basis:100%">${Object.entries(BUY_TYPES).map(([k, b]) => `<button type="button" data-wset="buyType" data-v="${k}" aria-pressed="${W.buyType === k}"><span>${b.label}<small>${b.src}</small></span><b>${man(b.price)}</b></button>`).join('')}</div></div>` : ''}</div>`;
+  if(wstep === 4) body = `<p class="lead">家賃と子どもの費用をのぞいた、毎月の生活費のイメージに近いものを選んでください。</p>
+    <div class="choice">${Object.entries(LIVING_PRESETS).map(([k, l]) => `<button type="button" data-wset="living" data-v="${k}" aria-pressed="${W.living === k}"><span>${l.label}<small>${l.desc}</small></span><b>月 ${man(sumLiving(l.v)*(single ? 0.6 : 1))}円</b></button>`).join('')}</div>
+    <p class="hint">食費・光熱費・通信費・保険・趣味・おこづかいなどの合計です。あとから項目ごとに変えられます。</p>`;
+  if(wstep === 5) body = `<p class="lead">やりたいことをえらんでください。金額は全国・大阪の平均で入ります。</p>
+    <div class="group">${single ? '' : wSw('結婚式をする（顔合わせ・指輪・新婚旅行も）', 'wed') + (W.wed ? wStep('結婚式の年', 'wedYear') : '')}</div>
+    <div class="group"><div class="row"><span class="lbl">子どもは？</span>${wSeg('kids', [[0,'なし'],[1,'1人'],[2,'2人'],[3,'3人']])}</div>
+      ${+W.kids > 0 ? wStep('1人目が生まれる年', 'kidYear') + (+W.kids > 1 ? `<div class="row"><span class="lbl">きょうだいの年の差</span>${wSeg('kidGap', [[2,'2歳'],[3,'3歳'],[4,'4歳']])}</div>` : '') : ''}</div>
+    <div class="group">${wSw('国内旅行を毎年（2人で10万円）', 'tripDom')}${wSw('海外旅行を3年ごと（2人で40万円）', 'tripAbroad')}${wSw('車を持つ', 'car')}${W.car ? wStep('車を買う年', 'carYear') : ''}</div>`;
+  $('#wiz').innerHTML = `<div class="wiz-in">
+    <div class="wiz-top"><span class="hint">かんたん設定 ${wstep + 1} / ${WSTEPS.length}</span><button type="button" class="x" data-act="closeWiz" aria-label="閉じる">×</button></div>
+    <div class="prog">${WSTEPS.map((_, i) => `<i class="${i <= wstep ? 'on' : ''}"></i>`).join('')}</div>
+    <h2>${WSTEPS[wstep]}</h2>${body}
+    <div class="wiz-nav"><button type="button" class="btn ghost" data-act="wizBack" ${wstep ? '' : 'disabled'}>戻る</button><button type="button" class="btn" data-act="wizNext">${wstep === WSTEPS.length - 1 ? '結果を見る' : '次へ'}</button></div></div>`;
+}
+function wizFinish(){
+  const s = baseState(), single = W.mode === 'single';
+  s.mode = W.mode; s.area = W.area; s.osakaCity = !!(RENT_AREAS.find(a => a.id === W.area) || {}).city;
+  const g = GROWTH[W.growth] || GROWTH.std;
+  s.people = [defaultPerson(W.nameA || 'わたし', +W.ageA, +W.incA), defaultPerson(W.nameB || 'パートナー', +W.ageB, +W.incB)];
+  s.people.forEach(p => { p.growth = W.growth; p.young = g.young; p.mid = g.mid; p.senior = g.senior; });
+  s.savings.cash = +W.cash; s.savings.invest = +W.invest; s.savings.monthly = +W.monthly;
+  s.housing.rent = +W.rent; s.housing.layout = W.layout;
+  if(W.buy){ s.housing.buyOn = true; applyBuyType(s.housing.buy, W.buyType); s.housing.buy.year = +W.buyYear; }
+  const lp = LIVING_PRESETS[W.living]; s.livingPreset = W.living;
+  s.living = Object.fromEntries(Object.entries(lp.v).map(([k, v]) => [k, Math.round(v*(single ? 0.6 : 1)*10)/10]));
+  if(single) s.retireLiving = 15;
+  const A = s.people[0];
+  if(!single && W.wed) s.events.push(...weddingEvents(+W.wedYear));
+  for(let i = 0; i < +W.kids; i++) s.children.push(defaultChild(i, +W.kidYear + i*(+W.kidGap), single));
+  if(W.tripDom) s.events.push(ev('国内旅行（1泊2日）', 10, NOW + 1, {repeat:1, until:NOW + (75 - A.age)}));
+  if(W.tripAbroad) s.events.push(ev('海外旅行（アジア・4日間）', 40, NOW + 1, {repeat:3, until:NOW + (70 - A.age)}));
+  if(W.car){ s.events.push(ev('車の購入', 300, +W.carYear, {repeat:10, until:NOW + (75 - A.age)})); s.events.push(ev('車の維持費（駐車場・保険・税金・車検・ガソリン）', 45, +W.carYear, {repeat:1, until:NOW + (80 - A.age)})); }
+  S = s; save(); recalc();
+  $('#wiz').hidden = true; document.body.style.overflow = '';
+  ui.tab = 'result'; ui.sel = NOW; render(); window.scrollTo(0, 0);
+  toast('ふたりの表ができました');
+}
+
+/* ===== 画面の切り替え ===== */
+const TABS = [['result','結果','chart'],['input','入力','edit'],['events','予定','cal'],['table','年表','table'],['more','その他','more']];
+function render(){
+  const v = $('#view');
+  v.innerHTML = ui.tab === 'input' ? renderInput() : ui.tab === 'events' ? renderEvents() : ui.tab === 'table' ? renderTable() : ui.tab === 'more' ? renderMore() : renderResult();
+  $$('.tab').forEach(t => t.setAttribute('aria-selected', String(t.dataset.tab === ui.tab)));
+  if(ui.tab === 'result') drawCharts();
+  updatePill(); saveUi();
+}
+function go(tab){ ui.tab = tab; ui.resetArm = false; render(); window.scrollTo(0, 0); }
+
+/* ===== 操作 ===== */
+const ACT = {
+  growth: a => { const [i, k] = a.split(':'); const p = S.people[+i], g = GROWTH[k]; p.growth = k; p.young = g.young; p.mid = g.mid; p.senior = g.senior; afterChange(true); },
+  livingPreset: a => { const single = S.mode === 'single'; S.livingPreset = a; S.living = Object.fromEntries(Object.entries(LIVING_PRESETS[a].v).map(([k, v]) => [k, Math.round(v*(single ? 0.6 : 1)*10)/10])); afterChange(true); },
+  rentPreset: () => { const a = RENT_AREAS.find(x => x.id === S.area) || RENT_AREAS[1]; S.housing.rent = a.r[S.housing.layout]; afterChange(true); toast(`家賃を${S.housing.rent}万円にしました`); },
+  addMove: () => { const a = RENT_AREAS.find(x => x.id === S.area) || RENT_AREAS[1]; S.housing.moves.push({year:NOW + 3, rent:a.r['3LDK'], cost:Math.round(a.r['3LDK']*4)}); afterChange(true); },
+  delMove: a => { S.housing.moves.splice(+a, 1); afterChange(true); },
+  buyType: a => { applyBuyType(S.housing.buy, a); afterChange(true); },
+  addChild: () => { const last = S.children[S.children.length - 1]; S.children.push(defaultChild(S.children.length, last ? last.birthYear + 3 : NOW + 2, S.mode === 'single')); ui.open.kids = true; afterChange(true); },
+  delChild: a => { S.children.splice(+a, 1); S.children.forEach((k, i) => { if(/^\d+人目$/.test(k.name)) k.name = `${i+1}人目`; }); afterChange(true); },
+  range: a => { ui.range = a; render(); },
+  tbl: a => { ui.tbl = a; render(); },
+  row: a => yearSheet(+a),
+  tpl: a => tplSheet(a),
+  tplItem: a => { const [g, i] = a.split(':'); const it = TPL.find(x => x.id === g).items[+i]; const A = S.people[0];
+    eventSheet(ev(it.name, it.amount, NOW + 1, {type:it.type, repeat:it.repeat || 0, until:it.repeat ? NOW + Math.max(1, 75 - A.age) : 0}), true); },
+  wedSet: () => { const y = toNum($('#w-year').value); S.events.push(...weddingEvents(isNaN(y) ? NOW + 1 : y)); closeSheet(); afterChange(true); toast('結婚関連の予定を追加しました'); },
+  newEvent: () => eventSheet(ev('', 10, NOW + 1), true),
+  editEvent: a => { const e = S.events.find(x => x.id === a); if(e) eventSheet(e, false); },
+  saveEvent: () => {
+    const name = $('#e-name').value.trim() || '予定';
+    const amt = toNum($('#e-amt').value), y = toNum($('#e-year').value), u = toNum($('#e-until').value);
+    if(isNaN(amt) || isNaN(y)){ toast('金額と年を数字で入れてください'); return; }
+    const e = {id:draft.id, name, amount:Math.max(0, amt), year:Math.round(y), type:draft.type, repeat:draft.repeat, until:draft.repeat ? Math.round(isNaN(u) ? y : Math.max(u, y)) : 0, inflate:$('#e-inf').checked};
+    const i = S.events.findIndex(x => x.id === e.id);
+    if(i >= 0) S.events[i] = e; else S.events.push(e);
+    const isNew = draft._new; closeSheet(); afterChange(true); toast(isNew ? '予定を追加しました' : '保存しました');
+  },
+  delEvent: () => { S.events = S.events.filter(x => x.id !== draft.id); closeSheet(); afterChange(true); toast('削除しました'); },
+  closeSheet: () => closeSheet(),
+  openWiz: () => { wizInit(); renderWiz(); $('#wiz').hidden = false; $('#wiz').scrollTop = 0; document.body.style.overflow = 'hidden'; },
+  closeWiz: () => { $('#wiz').hidden = true; document.body.style.overflow = ''; },
+  wizBack: () => { if(wstep > 0){ wstep--; renderWiz(); $('#wiz').scrollTop = 0; } },
+  wizNext: () => { if(wstep < WSTEPS.length - 1){ wstep++; renderWiz(); $('#wiz').scrollTop = 0; } else wizFinish(); },
+  ackYear: () => { delete S.yearShifted; save(); render(); },
+  copyBackup: () => {
+    const txt = JSON.stringify(S);
+    const done = () => toast('コピーしました。メモアプリなどに貼り付けて保存してください');
+    const fallback = () => { const t = $('#restore-txt'); t.value = txt; t.focus(); t.select(); toast('下の枠のテキストを選択しました。コピーしてください'); };
+    try{ navigator.clipboard.writeText(txt).then(done, fallback); }catch(e){ fallback(); }
+  },
+  saveFile: () => { const blob = new Blob([JSON.stringify(S, null, 1)], {type:'application/json'}); const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `cashflow-backup-${NOW}.json`; document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 500); },
+  pickFile: () => $('#file-in').click(),
+  restoreText: () => restoreFrom($('#restore-txt').value),
+  reset: () => { if(!ui.resetArm){ ui.resetArm = true; render(); return; } ui.resetArm = false; S = baseState(); save(); recalc(); go('result'); ACT.openWiz(); },
+  loadSample: () => { S = sampleState(); save(); recalc(); go('result'); },
+};
+function restoreFrom(text){
+  try{
+    const o = JSON.parse(String(text).trim());
+    if(!o || !Array.isArray(o.people)) throw new Error();
+    S = migrate(o); S.sample = false; save(); recalc(); go('result'); toast('データを復元しました');
+  }catch(e){ toast('読み込めませんでした。コピーしたテキストをそのまま貼り付けてください'); }
+}
+
+/* ===== イベント処理 ===== */
+document.addEventListener('click', e => {
+  const rb = e.target.closest('[data-radio] [data-rv]');
+  if(rb){ const g = rb.closest('[data-radio]'); $$('[data-rv]', g).forEach(b => b.setAttribute('aria-pressed', String(b === rb)));
+    const key = g.dataset.radio; draft[key] = key === 'repeat' ? +rb.dataset.rv : rb.dataset.rv;
+    if(key === 'repeat') $('#e-until-row').hidden = !draft.repeat; return; }
+  const ss = e.target.closest('[data-sstep]');
+  if(ss){ const inp = $('#' + ss.dataset.sstep); const v = toNum(inp.value); inp.value = (isNaN(v) ? NOW : v) + (+ss.dataset.d); sheetAges(); return; }
+  const ws = e.target.closest('[data-wset]');
+  if(ws){ let v = ws.dataset.v; if(ws.dataset.t === 'num' || /^(kids|kidGap)$/.test(ws.dataset.wset)) v = Number(v); if(v === 'true' || v === 'false') v = v === 'true'; W[ws.dataset.wset] = v; renderWiz(); return; }
+  const wst = e.target.closest('[data-wstep]');
+  if(wst){ const k = wst.dataset.wstep; W[k] = (+W[k] || 0) + (+wst.dataset.d); const inp = $('#w-' + k); if(inp) inp.value = W[k]; return; }
+  const b = e.target.closest('[data-tab],[data-set],[data-step],[data-act]');
+  if(!b) return;
+  if(b.dataset.tab){ go(b.dataset.tab); return; }
+  if(b.dataset.set){ let v = b.dataset.v; const t = b.dataset.t; if(t === 'num') v = Number(v); else if(t === 'bool') v = v === 'true'; setP(S, b.dataset.set, v); afterChange(true); return; }
+  if(b.dataset.step){ const k = b.dataset.step; setP(S, k, clampField(k, (+getP(S, k) || 0) + (+b.dataset.d))); const inp = document.getElementById(fid(k)); if(inp) inp.value = fmtIn(getP(S, k)); afterChange(b.dataset.rr === '1'); return; }
+  if(b.dataset.act && ACT[b.dataset.act]){ ACT[b.dataset.act](b.dataset.a, b); }
+});
+document.addEventListener('input', e => {
+  const el = e.target;
+  if(el.dataset.wk){ if(el.type !== 'checkbox' && el.tagName !== 'SELECT'){ W[el.dataset.wk] = el.dataset.t === 'str' ? el.value : (isNaN(toNum(el.value)) ? W[el.dataset.wk] : toNum(el.value)); } return; }
+  if(el.id === 'e-year' || el.id === 'e-until'){ sheetAges(); return; }
+  const k = el.dataset.k; if(!k || el.type === 'checkbox' || el.tagName === 'SELECT') return;
+  if(el.dataset.t === 'str'){ setP(S, k, el.value); save(); updateLive(); return; }
+  const v = toNum(el.value); if(isNaN(v)) return;
+  setP(S, k, v);
+  if(S.sample){ S.sample = false; }
+  save(); recalc(); updateLive();
+});
+document.addEventListener('change', e => {
+  const el = e.target;
+  if(el.id === 'file-in'){ const f = el.files && el.files[0]; if(!f) return; const rd = new FileReader(); rd.onload = () => restoreFrom(rd.result); rd.readAsText(f); el.value = ''; return; }
+  if(el.dataset.wk){ const k = el.dataset.wk;
+    if(el.type === 'checkbox'){ W[k] = el.checked; renderWiz(); }
+    else if(el.tagName === 'SELECT'){ W[k] = el.value; if(k === 'area') renderWiz(); }
+    else if(el.dataset.t !== 'str'){ const v = toNum(el.value); W[k] = isNaN(v) ? 0 : Math.max(0, v); el.value = fmtIn(W[k]); }
+    return; }
+  const k = el.dataset.k; if(!k) return;
+  if(k.endsWith('pensionAuto_x')){ setP(S, k.replace('_x', ''), !el.checked); afterChange(true); return; }
+  if(el.type === 'checkbox'){ setP(S, k, el.checked); afterChange(true); return; }
+  if(el.tagName === 'SELECT'){ setP(S, k, el.dataset.t === 'num' ? Number(el.value) : el.value); afterChange(true); return; }
+  if(el.dataset.t === 'str'){ setP(S, k, el.value.trim() || (getP(S, k) || '')); afterChange(true); return; }
+  let v = toNum(el.value); if(isNaN(v)) v = 0; v = clampField(k, v); setP(S, k, v); el.value = fmtIn(v);
+  afterChange(el.dataset.rr === '1');
+});
+document.addEventListener('toggle', e => { const d = e.target; if(d.dataset && d.dataset.sec){ ui.open[d.dataset.sec] = d.open; saveUi(); } }, true);
+$('#scrim').addEventListener('click', closeSheet);
+document.addEventListener('keydown', e => { if(e.key === 'Escape'){ if(!$('#sheet').hidden) closeSheet(); else if(!$('#wiz').hidden) ACT.closeWiz(); } });
+window.addEventListener('scroll', () => $('.top').classList.toggle('scrolled', window.scrollY > 4), {passive:true});
+let rz; window.addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(() => { if(ui.tab === 'result') drawCharts(); }, 150); });
+$('#tabbar').innerHTML = `<div class="tabbar-in">${TABS.map(([id, l, ic]) => `<button type="button" class="tab" data-tab="${id}" aria-selected="false">${svgIcon(ic)}<span>${l}</span></button>`).join('')}</div>`;
+$('#hpill').addEventListener('click', () => go('result'));
+render();
+
+})();
+</script>
+</body>
+</html>
